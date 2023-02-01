@@ -1,0 +1,203 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "23e4ea70-6e65-4599-b7b8-100914fa85be",
+  "displayData" : {
+    "name" : "test_output\\",
+    "description" : "",
+    "creationTime" : "2023-01-15T12:39:22.671115663Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-16T09:27:41.323765272Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "bfd3ca51-69f6-42cf-bcdf-90d703dbe535"
+  },
+  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.score",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('score', RECORD_TO_JSON(data.properties.score:string))",
+        "field" : {
+          "name" : "properties.score",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(data.properties.score:string)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.properties.score",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "score"
+        },
+        "inline" : true,
+        "id" : "951cb624-e86c-402d-b0aa-ebbe60876278",
+        "infix" : false,
+        "blockId" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.title",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('title', RECORD_TO_JSON(data.properties.score:string))",
+        "field" : {
+          "name" : "properties.title",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(data.properties.score:string)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.properties.score",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "title"
+        },
+        "inline" : true,
+        "id" : "387b8818-c872-4154-a4a8-0fe927877a4e",
+        "infix" : false,
+        "blockId" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+        "pathForRead" : { }
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "mandatory" : {
+      "clazz" : "MandatoryUpsolverOutputParameters",
+      "connection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-14T18:05:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-01-14T18:05:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+    "title" : "Select Block",
+    "expression" : "\nSELECT JSON_PATH('score',RECORD_TO_JSON(data.properties.score)) as properties.score,\n    JSON_PATH('title',RECORD_TO_JSON(data.properties.score)) as properties.title\n  FROM \"test_kinesis\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-01-15T12:51:37.585338330Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "versionNumber" : 1
+}

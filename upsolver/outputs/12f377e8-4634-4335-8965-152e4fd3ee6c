@@ -1,0 +1,343 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "12f377e8-4634-4335-8965-152e4fd3ee6c",
+  "displayData" : {
+    "name" : "test_kdg",
+    "description" : "",
+    "creationTime" : "2023-01-25T15:18:42.630910321Z",
+    "createdBy" : "Alon (alon.i@ludeo.com)",
+    "modifiedTime" : "2023-01-25T15:36:03.626222193Z",
+    "modifiedBy" : {
+      "value" : "Alon (alon.i@ludeo.com)"
+    },
+    "versionId" : "10d2ccea-a93f-461e-8ba2-9cca6c139723"
+  },
+  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatorySnowflakeOutputParameters",
+      "jdbcConnection" : "db78e902-2786-49c0-a4fd-6dd95ccc5b2b",
+      "schema" : {
+        "catalog" : "DBT_DEV",
+        "name" : "UPSOLVER_TEST"
+      },
+      "tableName" : "TEST_KDG_EVENTS",
+      "cloudStorageConnection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "CITY_NAME_FROM_IP",
+        "index" : 5,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "GEO_IP('City Name', data.ip_address:string)",
+        "field" : {
+          "name" : "data.city_name_from_ip",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.ip_address",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "GeoIp",
+          "attributes" : [ "City Name" ]
+        },
+        "inline" : false,
+        "id" : "1ecae2ef-c8ee-f654-3461-348504a14d61",
+        "infix" : false,
+        "blockId" : "4dc26445-f0d2-4091-8a2b-a04d00930a3d",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "FIRST_NAME",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.firstName",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_ID",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "USER_ID",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.user_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "LAST_NAME",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.lastName",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "IP",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.ip",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "FIRST_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "USER_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "LAST_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "IP",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CITY_NAME_FROM_IP",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "EVENT_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USER_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "FIRST_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LAST_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CITY_NAME_FROM_IP",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "IP",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    } ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : true,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-25T15:36:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-01-25T15:36:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "4dc26445-f0d2-4091-8a2b-a04d00930a3d",
+    "title" : "Select Block",
+    "expression" : "SET data.city_name_from_ip = GEO_IP('City Name', data.ip_address);\n// GENERATED @ 2023-01-25T15:20:51.116068676Z\nSELECT data.firstName AS FIRST_NAME,\n       data.event_id AS EVENT_ID,\n       data.user_id AS USER_ID,\n       data.lastName AS LAST_NAME,\n       data.ip AS IP,\n       data.city_name_from_ip AS CITY_NAME_FROM_IP\n  FROM \"0-kinesis_events_classic\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-01-25T15:36:03.345042706Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "versionNumber" : 1
+}

@@ -1,0 +1,314 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "c6f2e023-32ed-4530-97cc-da3eed5ff165",
+  "displayData" : {
+    "name" : "row_output_to_sf",
+    "description" : "",
+    "creationTime" : "2023-01-22T14:41:23.760653193Z",
+    "createdBy" : " (stas.grinberg@ludeo.com)",
+    "modifiedTime" : "2023-01-24T14:10:44.336209280Z",
+    "modifiedBy" : {
+      "value" : " (stas.grinberg@ludeo.com)"
+    },
+    "versionId" : "b40589fc-39e8-4fd0-805d-905e3cb9f655"
+  },
+  "inputs" : [ "2eae81ff-8535-490f-9282-34b7db613da1" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatorySnowflakeOutputParameters",
+      "jdbcConnection" : "db78e902-2786-49c0-a4fd-6dd95ccc5b2b",
+      "schema" : {
+        "catalog" : "DBT_DEV",
+        "name" : "UPSOLVER_TEST"
+      },
+      "tableName" : "stg_row_enriched",
+      "cloudStorageConnection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_NAME",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_ID",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_TIMESTAMP",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_timestamp",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "GAME_ID",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.game_id",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "USER_ID",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.user_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "SESSION_ID",
+        "index" : 5,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_TIMESTAMP",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "GAME_ID",
+        "columnType" : {
+          "clazz" : "DbDouble"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "USER_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "SESSION_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "EVENT_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USER_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "GAME_ID",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_TIMESTAMP",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    } ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : true,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-22T14:59:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-01-22T14:59:00Z",
+  "workspaces" : [ "6f0b3243-fc50-4971-9216-01d45f67702a" ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2023-01-22T14:59:52.346594412Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "2eae81ff-8535-490f-9282-34b7db613da1" ],
+  "versionNumber" : 1
+}

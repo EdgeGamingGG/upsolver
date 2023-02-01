@@ -1,0 +1,38 @@
+{
+  "id" : "51c1883f-2630-438f-a568-eb5df17e1b96",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "KeyBasedCredentials",
+      "accessKey" : "AKIAWHTIBU5LGLG6OXFO",
+      "secretKey" : "CdN/o6o5bxiux81u1foB1yE9mPvvbYpqfqWKeZJoAREpRTH910TyozH0LkkPjbBU"
+    },
+    "bucket" : "upsolver-managed-us-east-1",
+    "region" : "us-east-1",
+    "path" : "managed/07b3dbc6-db99-4e4c-8401-dd14e6733c94-unallocated-organization",
+    "displayData" : {
+      "name" : "Default Storage Connection",
+      "description" : "",
+      "creationTime" : "2017-09-24T13:21:51.776Z",
+      "createdBy" : "",
+      "modifiedTime" : "2022-12-25T13:37:17.716998898Z",
+      "modifiedBy" : {
+        "value" : " (alexga@edgegaming.gg)"
+      },
+      "versionId" : "0fa46ab9-3c9a-44e3-b219-dd839605b735"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://upsolver-managed-us-east-1/managed/07b3dbc6-db99-4e4c-8401-dd14e6733c94-unallocated-organization"
+  },
+  "hidden" : true,
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-02-01T11:45:00.006130527Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

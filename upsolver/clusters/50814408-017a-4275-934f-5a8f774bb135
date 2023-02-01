@@ -1,0 +1,86 @@
+{
+  "id" : "50814408-017a-4275-934f-5a8f774bb135",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "displayData" : {
+    "name" : "Default Compute",
+    "description" : "Default Compute for SQLake VPC (alexga@edgegaming.gg)",
+    "creationTime" : "2022-12-25T13:40:34.648364655Z",
+    "createdBy" : "Upsolver Integration",
+    "modifiedTime" : "2022-12-26T12:04:08.626237194Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "bd3ea377-18c2-4db6-af37-e908946984b9"
+  },
+  "size" : {
+    "min" : "XS",
+    "max" : "XS"
+  },
+  "environmentType" : "compute",
+  "privateVpc" : "469359549139",
+  "region" : "eu-central-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : true,
+  "runOnDefault" : false,
+  "elasticIps" : {
+    "value" : true
+  },
+  "maxElasticIpsNum" : 1,
+  "nextRestartOperation" : {
+    "clazz" : "CustomerEnvironment$RollOperation",
+    "time" : "2023-01-31T12:52:29.217223900Z"
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "lastUpdatedBy" : "dima@upsolver.com",
+  "lastUpdateTime" : "2023-01-31T12:12:29.972132809Z",
+  "version" : 75,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "dryRunEnvironment" : {
+    "isRunning" : true,
+    "buildConfiguration" : {
+      "clazz" : "S3BuildConfiguration",
+      "tag" : "dryrun_rc324_sqlake"
+    },
+    "runUntil" : "2022-12-29T04:05:29.576255902Z",
+    "dryRunIdentifier" : "dryrun-2022-12-29T03:05:27.519377759Z",
+    "exceptionWhitelist" : "CancelledOperationException;NonDeterministicDryRunException\n",
+    "tasksToIgnorePatterns" : [ "index_part:hour", "index_part:5_minutes_merge", "index_part:20_minutes_merge", "index_part:full_merge", "index_part:\\d+_days_merge", "index_part:\\d+_hours_merge" ],
+    "acceptNewTasksUntil" : "2022-12-29T04:05:29.576255902Z"
+  },
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "5K3aBibK25EFMRg3KlOAAZWEhRWS4KuPRDXO8oQhPipvDqE8IgxIlxO6Vf9GDjNd"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-12-26T12:04:08.626043075Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "status" : {
+    "clazz" : "Running"
+  }
+}

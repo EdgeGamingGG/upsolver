@@ -1,0 +1,52 @@
+{
+  "id" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "connection" : {
+    "clazz" : "S3Connection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::357632654526:role/upsolver-role-07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "externalId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "integration" : {
+        "clazz" : "DefaultAwsCloudIntegration",
+        "accountId" : "357632654526",
+        "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+        "region" : "eu-central-1",
+        "hasManagementRole" : true,
+        "includeRegionInRole" : false
+      },
+      "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "enforceExternalId" : true
+    },
+    "bucket" : "staging-mixpanel-import",
+    "region" : "eu-central-1",
+    "path" : "events_data",
+    "displayData" : {
+      "name" : "staging-mixpanel-import",
+      "description" : "",
+      "creationTime" : "2023-01-25T09:44:40.059396625Z",
+      "createdBy" : " (stas.grinberg@ludeo.com)",
+      "modifiedTime" : "2023-01-25T09:44:40.265225404Z",
+      "modifiedBy" : {
+        "value" : " (stas.grinberg@ludeo.com)"
+      },
+      "versionId" : "622e9e8e-7199-4b45-8f7e-e767e13dbe11"
+    },
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "s3://staging-mixpanel-import/events_data"
+  },
+  "validation" : {
+    "errors" : [ {
+      "clazz" : "SimpleValidationResult",
+      "property" : "credentials",
+      "error" : "The specified user does not have access credentials to access the resource(s): `s3://staging-mixpanel-import/events_data/upsolver.temp`. One or more of the following permissions may be missing: s3:PutObject, kms:Encrypt.",
+      "severity" : "error"
+    } ],
+    "time" : "2023-02-01T11:45:00.006130527Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

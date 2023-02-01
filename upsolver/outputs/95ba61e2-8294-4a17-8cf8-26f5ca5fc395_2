@@ -1,0 +1,275 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "95ba61e2-8294-4a17-8cf8-26f5ca5fc395_2",
+  "displayData" : {
+    "name" : "6-upsolver_sf_test_new",
+    "description" : "Duplicate of 6-upsolver_sf_test_new",
+    "creationTime" : "2023-01-23T15:52:55.798935823Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-24T14:08:24.549821193Z",
+    "modifiedBy" : {
+      "value" : " (stas.grinberg@ludeo.com)"
+    },
+    "versionId" : "043fb73b-a0b1-4b75-a450-73650ff79adf"
+  },
+  "inputs" : [ "559efa22-6495-4cd7-a1a1-3c3076f369e2" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatorySnowflakeOutputParameters",
+      "jdbcConnection" : "db78e902-2786-49c0-a4fd-6dd95ccc5b2b",
+      "schema" : {
+        "catalog" : "DBT_DEV",
+        "name" : "UPSOLVER_TEST"
+      },
+      "tableName" : "TEST_OUTPUT",
+      "cloudStorageConnection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_ID",
+        "index" : 0,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_ID",
+          "index" : 0,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_NAME",
+        "index" : 1,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_NAME",
+          "index" : 1,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_TIMESTAMP",
+        "index" : 2,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_TIMESTAMP",
+          "index" : 2,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_timestamp",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "IP_COUNTRY",
+        "index" : 3,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "IP_COUNTRY",
+          "index" : 3,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "ip_country",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "SESSION_ID",
+        "index" : 4,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "SESSION_ID",
+          "index" : 4,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "EVENT_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "IP_COUNTRY",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_TIMESTAMP",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    } ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : true,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-23T05:31:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "95ba61e2-8294-4a17-8cf8-26f5ca5fc395",
+    "rootId" : "95ba61e2-8294-4a17-8cf8-26f5ca5fc395",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-01-22T07:07:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ "6f0b3243-fc50-4971-9216-01d45f67702a" ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2023-01-23T16:10:37.794667023Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "559efa22-6495-4cd7-a1a1-3c3076f369e2" ],
+  "versionNumber" : 2
+}

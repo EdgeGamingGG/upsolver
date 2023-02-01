@@ -1,0 +1,203 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "b72fcfbb-7293-4d6c-8f12-239dfc0b394a",
+  "displayData" : {
+    "name" : "test_output",
+    "description" : "",
+    "creationTime" : "2023-01-15T12:26:41.953366113Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-15T12:38:26.178618901Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "220cb15e-f553-4696-aa89-46cd58150407"
+  },
+  "inputs" : [ "9a697d1f-f776-4fa0-9547-fbab6cd511f1" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.event_id",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('event_id', RECORD_TO_JSON(\"$event_time\":instant))",
+        "field" : {
+          "name" : "properties.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(\"$event_time\":instant)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "instant",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "$event_time",
+              "nativeType" : {
+                "name" : "instant",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "event_id"
+        },
+        "inline" : true,
+        "id" : "f6942783-b7cf-44f6-9e24-9e137f0923bf",
+        "infix" : false,
+        "blockId" : "691349de-33f6-4ca9-a3da-902d3d280fcd",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.event_name",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('event_name', RECORD_TO_JSON(\"$event_time\":instant))",
+        "field" : {
+          "name" : "properties.event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(\"$event_time\":instant)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "instant",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "$event_time",
+              "nativeType" : {
+                "name" : "instant",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "event_name"
+        },
+        "inline" : true,
+        "id" : "52110d4f-d399-460a-b236-844312bd6054",
+        "infix" : false,
+        "blockId" : "691349de-33f6-4ca9-a3da-902d3d280fcd",
+        "pathForRead" : { }
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "mandatory" : {
+      "clazz" : "MandatoryUpsolverOutputParameters",
+      "connection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-02T23:33:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-01-02T23:33:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "691349de-33f6-4ca9-a3da-902d3d280fcd",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2023-01-15T12:28:57.715052951Z\nSELECT JSON_PATH('event_id',RECORD_TO_JSON(\"$event_time\")) as properties.event_id,\nJSON_PATH('event_name',RECORD_TO_JSON(\"$event_time\")) as properties.event_name\n  FROM \"kinesis_events\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-01-15T12:31:49.663400604Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "9a697d1f-f776-4fa0-9547-fbab6cd511f1" ],
+  "versionNumber" : 1
+}

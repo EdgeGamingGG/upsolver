@@ -1,0 +1,37 @@
+{
+  "id" : "5f4e2dcd-09bb-4733-9613-a23676714278",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "connection" : {
+    "clazz" : "S3DBXConnection",
+    "displayData" : {
+      "name" : "S3",
+      "description" : "",
+      "creationTime" : "1970-01-01T00:00:00Z",
+      "createdBy" : "",
+      "modifiedTime" : "2022-12-25T13:40:35.066993868Z",
+      "modifiedBy" : {
+        "value" : " (alexga@edgegaming.gg)"
+      },
+      "versionId" : "d1c43260-e8fa-4feb-b8f4-704d424041a6"
+    },
+    "credentials" : {
+      "clazz" : "AwsIntegrationCredentials"
+    },
+    "bucketsIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$Filter",
+      "filter" : [ "eu-central-1-upsolver-07b3dbc6-db99-4e4c-8401-dd14e6733c94" ]
+    },
+    "readOnly" : false,
+    "serverSideEncryptionKey" : {
+      "clazz" : "DefaultEncryptionKey"
+    },
+    "displayValue" : "S3 Storage"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-02-01T11:45:00.006130527Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}

@@ -1,0 +1,97 @@
+{
+  "clazz" : "KinesisInput",
+  "id" : "4ad0a488-01bd-4d8a-bd59-744bdbb2a8ba",
+  "globalId" : "4ad0a488-01bd-4d8a-bd59-744bdbb2a8ba",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "displayData" : {
+    "name" : "kinesis_events_classic",
+    "description" : "",
+    "creationTime" : "2023-01-21T16:53:08.051413237Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-21T19:34:03.163011851Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "12b6c281-a184-46f2-843d-f598900e13fd"
+  },
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "kinesisConnection" : "18e087bc-52b6-4170-907d-519b2425d151",
+  "credentials" : {
+    "clazz" : "RoleBasedCredentials",
+    "arnRole" : "arn:aws:iam::357632654526:role/upsolver-role-07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+    "externalId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+    "integration" : {
+      "clazz" : "DefaultAwsCloudIntegration",
+      "accountId" : "357632654526",
+      "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "region" : "eu-central-1",
+      "hasManagementRole" : true,
+      "includeRegionInRole" : false
+    },
+    "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+    "enforceExternalId" : true
+  },
+  "streamName" : "events_collector",
+  "region" : "eu-central-1",
+  "startExecutionFrom" : "2023-01-20T16:53:00Z",
+  "isOnline" : false,
+  "isDeleted" : true,
+  "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "operationParallelism" : {
+    "clazz" : "TaskTimeOperationParallelismProvider",
+    "parallelismByTime" : [ ],
+    "defaultTotalShards" : 1,
+    "defaultShardType" : {
+      "clazz" : "ShardingType$ByTask"
+    }
+  },
+  "newShardParallelism" : {
+    "clazz" : "TaskTimeOperationParallelismProvider",
+    "parallelismByTime" : [ ],
+    "defaultTotalShards" : 1,
+    "defaultShardType" : {
+      "clazz" : "ShardingType$ByTask"
+    }
+  },
+  "onlineProcessingParallelism" : 1,
+  "readFromStart" : true,
+  "storeRawData" : false,
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "previewId" : "0947fa96df3a0233419d6b35edb6c478",
+  "addBatcherTag" : false,
+  "isRunning" : false,
+  "deleteMetadataFilesCreatedByBatcher" : false,
+  "isUnsynchronized" : false,
+  "shards" : 1,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "safeStartTime" : "2023-01-20T16:53:00Z"
+}

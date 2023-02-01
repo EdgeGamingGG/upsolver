@@ -1,0 +1,36 @@
+{
+  "id" : "d4848fe8-56f5-4432-a5a7-130980805528",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "connection" : {
+    "clazz" : "AthenaConnection",
+    "credentials" : {
+      "clazz" : "RoleBasedCredentials",
+      "arnRole" : "arn:aws:iam::919267489684:role/multi-tenant_07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "externalId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+      "enforceExternalId" : true
+    },
+    "s3StagingDir" : "s3://upsolver-managed-multi-tenant-env-us-east-1/multi-tenanat_07b3dbc6-db99-4e4c-8401-dd14e6733c94/query-results",
+    "region" : "us-east-1",
+    "displayData" : {
+      "name" : "SystemTables",
+      "description" : "Connection to access system tables, created by Upsolver",
+      "creationTime" : "2023-01-08T07:52:03.251028Z",
+      "createdBy" : "Upsolver",
+      "modifiedBy" : { },
+      "versionId" : "658b0eab-2e3e-420d-a6d7-f90108c57b1d"
+    },
+    "supportsGlue" : true,
+    "databaseIncludePolicy" : {
+      "clazz" : "EntitiesIncludePolicy$Filter",
+      "filter" : [ "logs" ]
+    },
+    "displayValue" : "SystemTables"
+  },
+  "validation" : {
+    "errors" : [ ],
+    "time" : "2023-02-01T11:45:00.006130527Z"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : true
+}

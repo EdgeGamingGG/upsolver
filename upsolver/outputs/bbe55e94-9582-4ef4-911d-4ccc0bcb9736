@@ -1,0 +1,243 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "bbe55e94-9582-4ef4-911d-4ccc0bcb9736",
+  "displayData" : {
+    "name" : "6-upsolver_s3_test",
+    "description" : "Duplicate of 6-upsolver_sf_test",
+    "creationTime" : "2023-01-22T11:19:23.512214952Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-24T09:45:56.587577854Z",
+    "modifiedBy" : {
+      "value" : " (stas.grinberg@ludeo.com)"
+    },
+    "versionId" : "123e0780-905b-456e-b561-37f20959f563"
+  },
+  "inputs" : [ "559efa22-6495-4cd7-a1a1-3c3076f369e2" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "CloudStorageOutputParameters",
+    "compression" : {
+      "clazz" : "NoneCompression",
+      "noCompression" : [ ],
+      "displayName" : "None"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_ID",
+        "index" : 0,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_ID",
+          "index" : 0,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_NAME",
+        "index" : 1,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_NAME",
+          "index" : 1,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_TIMESTAMP",
+        "index" : 2,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "EVENT_TIMESTAMP",
+          "index" : 2,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "event_timestamp",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "IP_COUNTRY",
+        "index" : 3,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "IP_COUNTRY",
+          "index" : 3,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "ip_country",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "SESSION_ID",
+        "index" : 4,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "SESSION_ID",
+          "index" : 4,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "path" : "",
+    "dateFormat" : {
+      "clazz" : "DefaultDateExtractor",
+      "pattern" : "yyyy/MM/dd/HH/mm/",
+      "smallestPart" : 1,
+      "hasWeek" : false,
+      "hasYear" : true,
+      "displayName" : "Default",
+      "displayValue" : "Default (yyyy/MM/dd/HH/mm/)"
+    },
+    "shouldFlatten" : true,
+    "softRetention" : false,
+    "outputOffset" : 0,
+    "mandatory" : {
+      "clazz" : "MandatoryCloudStorageOutputParameters",
+      "outputFormat" : {
+        "clazz" : "ParquetOutputFormat",
+        "formatName" : "Parquet",
+        "fileExtension" : "parquet",
+        "supportsDynamicFields" : false
+      },
+      "connection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    }
+  },
+  "outputInterval" : 10,
+  "startExecutionFrom" : "2023-01-14T12:25:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ "6f0b3243-fc50-4971-9216-01d45f67702a" ],
+  "reportingTags" : "",
+  "blocks" : [ ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "deployTime" : "2023-01-21T20:28:45.159895953Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "559efa22-6495-4cd7-a1a1-3c3076f369e2" ],
+  "versionNumber" : 1
+}

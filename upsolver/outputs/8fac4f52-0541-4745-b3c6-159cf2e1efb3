@@ -1,0 +1,199 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "8fac4f52-0541-4745-b3c6-159cf2e1efb3",
+  "displayData" : {
+    "name" : "test_output\\ (1)",
+    "description" : "Duplicate of test_output\\",
+    "creationTime" : "2023-01-15T12:52:23.877452441Z",
+    "createdBy" : "David Aisenthal (david@upsolver.com)",
+    "modifiedTime" : "2023-01-21T19:38:02.616981531Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "b849c1b6-5d82-489f-9de9-5dcf248fe4f7"
+  },
+  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.score",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('score', RECORD_TO_JSON(data.properties.score:string))",
+        "field" : {
+          "name" : "properties.score",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(data.properties.score:string)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.properties.score",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "score"
+        },
+        "inline" : true,
+        "id" : "951cb624-e86c-402d-b0aa-ebbe60876278",
+        "infix" : false,
+        "blockId" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "properties.title",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "JSON_PATH('title', RECORD_TO_JSON(data.properties.score:string))",
+        "field" : {
+          "name" : "properties.title",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "RECORD_TO_JSON(data.properties.score:string)",
+          "feature" : {
+            "clazz" : "AnyFeatures$RecordToJsonFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.properties.score",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "feature" : {
+          "clazz" : "JsonPath2Feature",
+          "path" : "title"
+        },
+        "inline" : true,
+        "id" : "387b8818-c872-4154-a4a8-0fe927877a4e",
+        "infix" : false,
+        "blockId" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+        "pathForRead" : { }
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-01-14T12:25:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : true,
+  "isRunning" : false,
+  "deployedEver" : false,
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "521f7b44-028c-4951-987a-c7f358e34b2a",
+    "title" : "Select Block",
+    "expression" : "\nSELECT JSON_PATH('score',RECORD_TO_JSON(data.properties.score)) as properties.score:STRING,\n    JSON_PATH('title',RECORD_TO_JSON(data.properties.score)) as properties.title:STRING\n  FROM \"test_kinesis\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-01-15T12:51:37.585338330Z",
+  "status" : {
+    "clazz" : "Archived"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "versionNumber" : 1
+}

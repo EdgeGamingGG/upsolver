@@ -1,0 +1,67 @@
+{
+  "id" : "4c32da33-6716-4dae-bb4f-46250bfbe35c",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "displayData" : {
+    "name" : "Default Query",
+    "description" : "Default Query for SQLake VPC (alexga@edgegaming.gg)",
+    "creationTime" : "2022-12-25T13:40:34.648999134Z",
+    "createdBy" : "Upsolver Integration",
+    "modifiedTime" : "2022-12-25T13:40:35.081535384Z",
+    "modifiedBy" : {
+      "value" : " (alexga@edgegaming.gg)"
+    },
+    "versionId" : "66ca263d-e87f-4ef6-8f90-d2651681643d"
+  },
+  "size" : {
+    "min" : "XS",
+    "max" : "XS"
+  },
+  "environmentType" : "query",
+  "privateVpc" : "469359549139",
+  "region" : "eu-central-1",
+  "hosts" : {
+    "hosts" : [ ]
+  },
+  "running" : true,
+  "runOnDefault" : true,
+  "elasticIps" : {
+    "value" : false
+  },
+  "writeLogsToUpsolver" : true,
+  "runReplayCluster" : false,
+  "extraSecurityGroups" : [ ],
+  "scalingProviderOverride" : {
+    "clazz" : "Scaling$LowLatency"
+  },
+  "deploymentType" : {
+    "clazz" : "DeploymentType$AWS",
+    "amiTagName" : "UpsolverPrivateVpc"
+  },
+  "isDeleted" : false,
+  "version" : 75,
+  "allowUpsolverSsh" : false,
+  "exposePrivateIps" : false,
+  "alwaysAssociatePublicIps" : false,
+  "useVersionsCoordinator" : false,
+  "assumeRoleOnServerRole" : false,
+  "storeType" : {
+    "clazz" : "RemoteStoreType",
+    "secretKey" : "rlPe8ux1WqP0v8rR+bj8IGvqsWMHj0rqjqHzw9mIc3Is94ccZweNulaK4kwp8gyw"
+  },
+  "workspaces" : [ ],
+  "shouldCompareConfiguration" : true,
+  "tags" : {
+    "tags" : [ ]
+  },
+  "extraSpotTypes" : [ ],
+  "lastDeploymentTime" : "2022-12-25T13:40:34.649103226Z",
+  "excludeMonitoringReporters" : [ ],
+  "hibernated" : false,
+  "autohealEnabled" : true,
+  "serverFiles" : [ ],
+  "spotinstOverrides" : "",
+  "clazz" : "CustomerEnvironment",
+  "status" : {
+    "clazz" : "Running"
+  }
+}
