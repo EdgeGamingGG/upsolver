@@ -13,7 +13,7 @@
     "modifiedBy" : {
       "value" : "David Aisenthal (david@upsolver.com)"
     },
-    "versionId" : "c426f5ec-8441-472c-baf1-ca4f67d171f0"
+    "versionId" : "765c47ec-692f-4d20-a173-df8d8b2238bb"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -77,7 +77,7 @@
   "reportingTags" : "",
   "previewId" : "0947fa96df3a0233419d6b35edb6c478",
   "addBatcherTag" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "isUnsynchronized" : false,
   "shards" : 1,
@@ -87,7 +87,7 @@
     "displayValue" : "Manual - Shards"
   },
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "safeStartTime" : "2023-01-14T12:25:00Z"
 }
