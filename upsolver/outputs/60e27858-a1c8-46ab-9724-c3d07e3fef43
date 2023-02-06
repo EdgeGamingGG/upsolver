@@ -1,0 +1,210 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "60e27858-a1c8-46ab-9724-c3d07e3fef43",
+  "displayData" : {
+    "name" : "evets_to_athena",
+    "description" : "",
+    "creationTime" : "2023-02-06T16:21:05.980567762Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedTime" : "2023-02-06T16:22:03.929137377Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "e2f636f0-eb24-4a69-8e66-901c7d9bde44"
+  },
+  "inputs" : [ "1106ffe1-b3b8-4ef8-aede-d47539c1520d" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "CompositeHiveMetastoreOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "UNIX_EPOCH_TO_DATE(time:number)",
+        "field" : {
+          "name" : "partition_date",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "time",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "NumericFeatures$EpochMillisToInstant"
+        },
+        "inline" : false,
+        "id" : "01982de4-9e07-eb13-1c8a-70cc18eb186d",
+        "infix" : false,
+        "blockId" : "da6b315a-7c8e-4a39-9503-6efe1ba5a062",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "PartitionTimeOutput",
+      "field" : {
+        "clazz" : "PointerFeatureInput",
+        "featureId" : "01982de4-9e07-eb13-1c8a-70cc18eb186d",
+        "subField" : "",
+        "nativeType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "partition_date",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false
+      },
+      "isAggregated" : false,
+      "outputs" : [ {
+        "name" : "partition_date",
+        "index" : 0,
+        "warnings" : [ ]
+      } ]
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "processing_time",
+        "index" : 1,
+        "outputType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "MultiFieldOutput",
+      "outputIndex" : 2,
+      "fieldPattern" : "*"
+    } ],
+    "softRetention" : false,
+    "partitionSize" : "Daily",
+    "path" : "",
+    "compression" : {
+      "clazz" : "SnappyCompression",
+      "headers" : [ {
+        "offset" : 0,
+        "header" : [ -1, 6, 0, 0, 115, 78, 97, 80, 112, 89 ]
+      } ],
+      "extension" : "snappy",
+      "displayName" : "Snappy"
+    },
+    "mandatory" : {
+      "clazz" : "CompositeHiveMetastoreMandatory",
+      "s3Connection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+      "hiveMetastores" : [ {
+        "clazz" : "AthenaMetastoreArgs",
+        "connection" : "5cbff9b8-060a-4166-88d8-88d06f29ed33",
+        "databaseName" : "test",
+        "tableName" : "kinesis_output"
+      } ]
+    },
+    "compactionParallelism" : {
+      "clazz" : "NoOperationParallelism"
+    },
+    "selectedOutputType" : "AthenaMetastoreArgs",
+    "runCompactions" : true,
+    "scheduledCompactions" : {
+      "compactions" : [ ]
+    },
+    "upsertPartitionFields" : false,
+    "shouldFlatten" : false,
+    "allowNotPartitionedTable" : false,
+    "nullRecordsAsNull" : false,
+    "multiFieldExcludePatterns" : ""
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-02-06T14:23:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-02-06T14:23:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "da6b315a-7c8e-4a39-9503-6efe1ba5a062",
+    "title" : "Select Block",
+    "expression" : "SET partition_date = UNIX_EPOCH_TO_DATE(time);\n// GENERATED @ 2023-02-06T16:21:08.127856523Z\nSELECT PARTITION_TIME(partition_date) AS partition_date:TIMESTAMP,\n       time AS processing_time:TIMESTAMP,*\n  FROM \"events\"  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-02-06T16:22:14.524247256Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "1106ffe1-b3b8-4ef8-aede-d47539c1520d" ],
+  "versionNumber" : 1
+}
