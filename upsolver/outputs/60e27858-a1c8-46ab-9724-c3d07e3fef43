@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-02-06T16:21:05.980567762Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-06T16:22:14.803467423Z",
+    "modifiedTime" : "2023-02-06T16:24:33.687439492Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "b20683ae-da38-4646-a867-59c8da435ceb"
+    "versionId" : "a845f7e6-f46e-4980-ac7b-37f3117634ad"
   },
   "inputs" : [ "1106ffe1-b3b8-4ef8-aede-d47539c1520d" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -176,6 +176,10 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-06T14:23:00Z",
+  "isCompleted" : false,
+  "executionState" : {
+    "clazz" : "ExecutionState$Completed"
+  },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
