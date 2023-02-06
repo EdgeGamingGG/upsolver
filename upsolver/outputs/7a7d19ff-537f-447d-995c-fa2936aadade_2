@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "7a7d19ff-537f-447d-995c-fa2936aadade",
+  "id" : "7a7d19ff-537f-447d-995c-fa2936aadade_2",
   "displayData" : {
     "name" : "filter kinesis events",
     "description" : "",
     "creationTime" : "2023-02-06T13:32:06.029064378Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-06T15:58:30.186536656Z",
+    "modifiedTime" : "2023-02-06T15:59:39.499425283Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "bf5b7532-9ec8-438c-9cf2-84b744208c21"
+    "versionId" : "46352867-679b-4faf-b30b-3a0f2361ecfd"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1001,6 +1001,36 @@
         "isAggregationField" : false,
         "isFromInline" : false
       }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "id",
+        "index" : 30,
+        "outputType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
     } ],
     "softRetention" : false,
     "addTimeField" : true,
@@ -1012,13 +1042,18 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-05T10:13:00Z",
-  "endExecutionAt" : "2023-02-03T18:48:00Z",
+  "startExecutionFrom" : "2023-02-03T18:48:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "7a7d19ff-537f-447d-995c-fa2936aadade",
+    "rootId" : "7a7d19ff-537f-447d-995c-fa2936aadade",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -1027,13 +1062,16 @@
   "outputSharding" : {
     "clazz" : "NoOperationParallelism"
   },
-  "earliestStartExecutionFrom" : "2023-02-05T10:13:00Z",
+  "earliestStartExecutionFrom" : "2023-02-03T18:48:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "26826f71-6c0c-4942-971f-ad2a8dab0217",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-06T14:41:20.221576715Z\nSELECT \n      \n       time AS processing_time,\n       data.event_name AS event_name:STRING,\n       data.event_name_x AS event_name_x:STRING,\n       data.event_timestamp AS event_timestamp:STRING,\n       data.event_timestamp_unix AS event_timestamp_unix:NUMBER,\n       data.event_type AS event_type:STRING,\n       data.firstName AS firstName:STRING,\n       data.game_id AS game_id:NUMBER,\n       data.geo_country AS geo_country:STRING,\n       data.geo_timezone AS geo_timezone:STRING,\n       data.lastName AS lastName:STRING,\n       data.application AS application:STRING,\n       data.avatarUrl AS avatarUrl:STRING,\n       data.browser_name AS browser_name:STRING,\n       data.device_is_mobile AS device_is_mobile:BOOLEAN,\n       data.device_type AS device_type:STRING,\n       data.event AS event:STRING,\n       data.nickname AS nickname:STRING,\n       data.os AS os:STRING,\n       data.os_name AS os_name:STRING,\n       data.os_timezone AS os_timezone:STRING,\n       data.referer_medium AS referer_medium:STRING,\n       data.referer_url AS referer_url:STRING,\n       data.session_id AS session_id:STRING,\n       data.userId AS userId:STRING,\n       data.user_domain_id AS user_domain_id:STRING,\n       data.user_custom_id AS user_custom_id:STRING,\n       data.utm_source AS utm_source:STRING,\n       data.utm_medium AS utm_medium:STRING,\n       data.utm_content AS utm_content:STRING,\n       data.utm_campaign AS utm_campaign:STRING\n  FROM \"0-kinesis_events_classic\" \n WHERE data.event_name NOT IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed') IS DISTINCT FROM false \n",
+    "expression" : "// GENERATED @ 2023-02-06T14:41:20.221576715Z\nSELECT \n      \n       time AS processing_time,\n       data.event_name AS event_name:STRING,\n       data.event_name_x AS event_name_x:STRING,\n       data.event_timestamp AS event_timestamp:STRING,\n       data.event_timestamp_unix AS event_timestamp_unix:NUMBER,\n       data.event_type AS event_type:STRING,\n       data.firstName AS firstName:STRING,\n       data.game_id AS game_id:NUMBER,\n       data.geo_country AS geo_country:STRING,\n       data.geo_timezone AS geo_timezone:STRING,\n       data.lastName AS lastName:STRING,\n       data.application AS application:STRING,\n       data.avatarUrl AS avatarUrl:STRING,\n       data.browser_name AS browser_name:STRING,\n       data.device_is_mobile AS device_is_mobile:BOOLEAN,\n       data.device_type AS device_type:STRING,\n       data.event AS event:STRING,\n       data.nickname AS nickname:STRING,\n       data.os AS os:STRING,\n       data.os_name AS os_name:STRING,\n       data.os_timezone AS os_timezone:STRING,\n       data.referer_medium AS referer_medium:STRING,\n       data.referer_url AS referer_url:STRING,\n       data.session_id AS session_id:STRING,\n       data.userId AS userId:STRING,\n       data.user_domain_id AS user_domain_id:STRING,\n       data.user_custom_id AS user_custom_id:STRING,\n       data.utm_source AS utm_source:STRING,\n       data.utm_medium AS utm_medium:STRING,\n       data.utm_content AS utm_content:STRING,\n       data.utm_campaign AS utm_campaign:STRING,\n       data.id AS id:STRING\n  FROM \"0-kinesis_events_classic\" \n WHERE data.event_name NOT IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed') IS DISTINCT FROM false \n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -1047,7 +1085,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-06T14:51:17.603998713Z",
+  "deployTime" : "2023-02-06T16:00:12.429509025Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1059,5 +1097,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 1
+  "versionNumber" : 2
 }
