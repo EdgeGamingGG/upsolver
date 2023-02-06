@@ -1,0 +1,68 @@
+{
+  "clazz" : "KinesisInput",
+  "id" : "efe1a60d-f8ae-4c75-9fe6-3acde41fb0c0",
+  "globalId" : "efe1a60d-f8ae-4c75-9fe6-3acde41fb0c0",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "displayData" : {
+    "name" : "events_collector",
+    "description" : "",
+    "creationTime" : "2023-02-06T13:30:03.112227681Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedBy" : { },
+    "versionId" : "a0b63561-1b4f-4323-ab46-1c7abfcae453"
+  },
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "kinesisConnection" : "18e087bc-52b6-4170-907d-519b2425d151",
+  "credentials" : {
+    "clazz" : "AwsIntegrationCredentials"
+  },
+  "streamName" : "events_collector",
+  "region" : "eu-central-1",
+  "startExecutionFrom" : "2023-02-06T13:00:00Z",
+  "isOnline" : false,
+  "isDeleted" : false,
+  "softRetention" : false,
+  "version" : 75,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "newShardParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "onlineProcessingParallelism" : 1,
+  "readFromStart" : false,
+  "storeRawData" : false,
+  "compression" : {
+    "clazz" : "AutoDetectCompression",
+    "displayName" : "Auto Detect (Supports ZIP, GZip, Tar, Snappy and AWS KPL)"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "previewId" : "74f2fd4fdc42b04c96e252ab0bba6c58",
+  "addBatcherTag" : false,
+  "isRunning" : true,
+  "deleteMetadataFilesCreatedByBatcher" : false,
+  "isUnsynchronized" : false,
+  "shards" : 1,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Running"
+  },
+  "safeStartTime" : "2023-02-06T13:00:00Z"
+}
