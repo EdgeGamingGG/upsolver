@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "f6ca4802-cbe6-4bad-8adf-c7323421a9cf",
+  "id" : "f6ca4802-cbe6-4bad-8adf-c7323421a9cf_2",
   "displayData" : {
     "name" : "athena pipeline",
     "description" : "",
     "creationTime" : "2023-02-02T09:17:39.431789683Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-06T10:48:23.573522321Z",
+    "modifiedTime" : "2023-02-06T10:54:14.714032197Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "276a94b0-7b96-4784-8164-27ee67621716"
+    "versionId" : "9c2b5be3-feaf-41e1-96e0-ba72a3dfa142"
   },
   "inputs" : [ "b43703f8-d403-42f4-9dd5-40e374cf2aac" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -456,13 +456,18 @@
     "multiFieldExcludePatterns" : ""
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-01T11:16:00Z",
-  "endExecutionAt" : "2023-02-06T12:02:00Z",
+  "startExecutionFrom" : "2023-02-06T12:02:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "f6ca4802-cbe6-4bad-8adf-c7323421a9cf",
+    "rootId" : "f6ca4802-cbe6-4bad-8adf-c7323421a9cf",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -472,6 +477,9 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-01T11:16:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
@@ -491,7 +499,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-02T09:19:55.255641720Z",
+  "deployTime" : "2023-02-06T11:57:34.997332248Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -503,5 +511,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "b43703f8-d403-42f4-9dd5-40e374cf2aac" ],
-  "versionNumber" : 1
+  "versionNumber" : 2
 }
