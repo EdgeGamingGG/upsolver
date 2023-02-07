@@ -12,7 +12,7 @@
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "2ae04b9f-6b77-4494-a320-6372cf4c1a73"
+    "versionId" : "c4705941-af0e-486a-92ba-da99b063fdd8"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -2689,7 +2689,7 @@
   "earliestStartExecutionFrom" : "2023-02-07T07:39:00Z",
   "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Completed"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
