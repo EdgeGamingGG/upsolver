@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "da21abab-1f01-452d-957d-9497b077bccd",
+  "id" : "da21abab-1f01-452d-957d-9497b077bccd_2",
   "displayData" : {
     "name" : "test",
     "description" : "",
     "creationTime" : "2023-02-07T07:36:58.266687099Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-07T07:39:20.697892777Z",
+    "modifiedTime" : "2023-02-07T07:55:17.278781720Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "69247600-65da-431c-8fc1-6e15af21d6e7"
+    "versionId" : "389c80c9-ab5d-439e-b3d4-deaaa7022622"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -25,11 +25,6 @@
       "outputs" : [ {
         "name" : "application",
         "index" : 0,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -55,11 +50,6 @@
       "outputs" : [ {
         "name" : "avatarUrl",
         "index" : 1,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -85,11 +75,6 @@
       "outputs" : [ {
         "name" : "browser_language",
         "index" : 2,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -115,11 +100,6 @@
       "outputs" : [ {
         "name" : "browser_name",
         "index" : 3,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -145,11 +125,6 @@
       "outputs" : [ {
         "name" : "browser_user_agent",
         "index" : 4,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -175,11 +150,6 @@
       "outputs" : [ {
         "name" : "click_id",
         "index" : 5,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -205,11 +175,6 @@
       "outputs" : [ {
         "name" : "contextType",
         "index" : 6,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -235,11 +200,6 @@
       "outputs" : [ {
         "name" : "contexts",
         "index" : 7,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -265,11 +225,6 @@
       "outputs" : [ {
         "name" : "createdAt",
         "index" : 8,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -295,11 +250,6 @@
       "outputs" : [ {
         "name" : "created_at",
         "index" : 9,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -325,11 +275,6 @@
       "outputs" : [ {
         "name" : "created_at_local",
         "index" : 10,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -355,11 +300,6 @@
       "outputs" : [ {
         "name" : "device.client.engine",
         "index" : 11,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -385,11 +325,6 @@
       "outputs" : [ {
         "name" : "device.client.engineVersion",
         "index" : 12,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -415,11 +350,6 @@
       "outputs" : [ {
         "name" : "device.client.name",
         "index" : 13,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -445,11 +375,6 @@
       "outputs" : [ {
         "name" : "device.client.type",
         "index" : 14,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -475,11 +400,6 @@
       "outputs" : [ {
         "name" : "device.client.version",
         "index" : 15,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -505,11 +425,6 @@
       "outputs" : [ {
         "name" : "device.device.brand",
         "index" : 16,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -535,11 +450,6 @@
       "outputs" : [ {
         "name" : "device.device.model",
         "index" : 17,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -565,11 +475,6 @@
       "outputs" : [ {
         "name" : "device.device.type",
         "index" : 18,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -595,11 +500,6 @@
       "outputs" : [ {
         "name" : "device.os.name",
         "index" : 19,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -625,11 +525,6 @@
       "outputs" : [ {
         "name" : "device.os.platform",
         "index" : 20,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -655,11 +550,6 @@
       "outputs" : [ {
         "name" : "device.os.version",
         "index" : 21,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -685,11 +575,6 @@
       "outputs" : [ {
         "name" : "device_is_mobile",
         "index" : 22,
-        "outputType" : {
-          "name" : "boolean",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -715,11 +600,6 @@
       "outputs" : [ {
         "name" : "device_type",
         "index" : 23,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -745,11 +625,6 @@
       "outputs" : [ {
         "name" : "event",
         "index" : 24,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -775,11 +650,6 @@
       "outputs" : [ {
         "name" : "event_id",
         "index" : 25,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -805,11 +675,6 @@
       "outputs" : [ {
         "name" : "event_name",
         "index" : 26,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -835,11 +700,6 @@
       "outputs" : [ {
         "name" : "event_name_x",
         "index" : 27,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -865,11 +725,6 @@
       "outputs" : [ {
         "name" : "event_timestamp",
         "index" : 28,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -895,11 +750,6 @@
       "outputs" : [ {
         "name" : "event_timestamp_unix",
         "index" : 29,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -925,11 +775,6 @@
       "outputs" : [ {
         "name" : "event_type",
         "index" : 30,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -955,11 +800,6 @@
       "outputs" : [ {
         "name" : "external_auth",
         "index" : 31,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -985,11 +825,6 @@
       "outputs" : [ {
         "name" : "firstName",
         "index" : 32,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1015,11 +850,6 @@
       "outputs" : [ {
         "name" : "game_id",
         "index" : 33,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1045,11 +875,6 @@
       "outputs" : [ {
         "name" : "geo.ip",
         "index" : 34,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1075,11 +900,6 @@
       "outputs" : [ {
         "name" : "geo.locale",
         "index" : 35,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1105,11 +925,6 @@
       "outputs" : [ {
         "name" : "geo_country",
         "index" : 36,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1135,11 +950,6 @@
       "outputs" : [ {
         "name" : "geo_latitude",
         "index" : 37,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1165,11 +975,6 @@
       "outputs" : [ {
         "name" : "geo_longitude",
         "index" : 38,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1195,11 +1000,6 @@
       "outputs" : [ {
         "name" : "geo_region_name",
         "index" : 39,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1225,11 +1025,6 @@
       "outputs" : [ {
         "name" : "geo_timezone",
         "index" : 40,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1255,11 +1050,6 @@
       "outputs" : [ {
         "name" : "handle",
         "index" : 41,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1285,11 +1075,6 @@
       "outputs" : [ {
         "name" : "id",
         "index" : 42,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1315,11 +1100,6 @@
       "outputs" : [ {
         "name" : "inserted_at",
         "index" : 43,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1345,11 +1125,6 @@
       "outputs" : [ {
         "name" : "ip",
         "index" : 44,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1375,11 +1150,6 @@
       "outputs" : [ {
         "name" : "ip_address",
         "index" : 45,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1405,11 +1175,6 @@
       "outputs" : [ {
         "name" : "keyCiphertext",
         "index" : 46,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1435,11 +1200,6 @@
       "outputs" : [ {
         "name" : "lastName",
         "index" : 47,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1465,11 +1225,6 @@
       "outputs" : [ {
         "name" : "localService",
         "index" : 48,
-        "outputType" : {
-          "name" : "boolean",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1495,11 +1250,6 @@
       "outputs" : [ {
         "name" : "name",
         "index" : 49,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1525,11 +1275,6 @@
       "outputs" : [ {
         "name" : "nickname",
         "index" : 50,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1555,11 +1300,6 @@
       "outputs" : [ {
         "name" : "os",
         "index" : 51,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1585,11 +1325,6 @@
       "outputs" : [ {
         "name" : "os_name",
         "index" : 52,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1615,11 +1350,6 @@
       "outputs" : [ {
         "name" : "os_timezone",
         "index" : 53,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1645,11 +1375,6 @@
       "outputs" : [ {
         "name" : "page_url",
         "index" : 54,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1675,11 +1400,6 @@
       "outputs" : [ {
         "name" : "page_url_path",
         "index" : 55,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1705,11 +1425,6 @@
       "outputs" : [ {
         "name" : "params.id",
         "index" : 56,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1735,11 +1450,6 @@
       "outputs" : [ {
         "name" : "parentId",
         "index" : 57,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1765,11 +1475,6 @@
       "outputs" : [ {
         "name" : "properties.$insert_id",
         "index" : 58,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1795,11 +1500,6 @@
       "outputs" : [ {
         "name" : "properties.distinct_id",
         "index" : 59,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1825,11 +1525,6 @@
       "outputs" : [ {
         "name" : "properties.ludeo_id",
         "index" : 60,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1855,11 +1550,6 @@
       "outputs" : [ {
         "name" : "properties.ludeo_id_1",
         "index" : 61,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1885,11 +1575,6 @@
       "outputs" : [ {
         "name" : "properties.ludeo_name",
         "index" : 62,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1915,11 +1600,6 @@
       "outputs" : [ {
         "name" : "properties.score",
         "index" : 63,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1945,11 +1625,6 @@
       "outputs" : [ {
         "name" : "properties.time",
         "index" : 64,
-        "outputType" : {
-          "name" : "number",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -1975,11 +1650,6 @@
       "outputs" : [ {
         "name" : "properties.title",
         "index" : 65,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2005,11 +1675,6 @@
       "outputs" : [ {
         "name" : "properties.url",
         "index" : 66,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2035,11 +1700,6 @@
       "outputs" : [ {
         "name" : "reconnected",
         "index" : 67,
-        "outputType" : {
-          "name" : "boolean",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2065,11 +1725,6 @@
       "outputs" : [ {
         "name" : "referer_medium",
         "index" : 68,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2095,11 +1750,6 @@
       "outputs" : [ {
         "name" : "referer_url",
         "index" : 69,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2125,11 +1775,6 @@
       "outputs" : [ {
         "name" : "referer_url_port",
         "index" : 70,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2155,11 +1800,6 @@
       "outputs" : [ {
         "name" : "referer_url_scheme",
         "index" : 71,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2185,11 +1825,6 @@
       "outputs" : [ {
         "name" : "schema_version",
         "index" : 72,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2215,11 +1850,6 @@
       "outputs" : [ {
         "name" : "session_id",
         "index" : 73,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2245,11 +1875,6 @@
       "outputs" : [ {
         "name" : "source",
         "index" : 74,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2275,11 +1900,6 @@
       "outputs" : [ {
         "name" : "status",
         "index" : 75,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2305,11 +1925,6 @@
       "outputs" : [ {
         "name" : "steamLink",
         "index" : 76,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2335,11 +1950,6 @@
       "outputs" : [ {
         "name" : "uid",
         "index" : 77,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2365,11 +1975,6 @@
       "outputs" : [ {
         "name" : "unexpected",
         "index" : 78,
-        "outputType" : {
-          "name" : "boolean",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2395,11 +2000,6 @@
       "outputs" : [ {
         "name" : "updatedAt",
         "index" : 79,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2425,11 +2025,6 @@
       "outputs" : [ {
         "name" : "userId",
         "index" : 80,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2455,11 +2050,6 @@
       "outputs" : [ {
         "name" : "user_custom_id",
         "index" : 81,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2485,11 +2075,6 @@
       "outputs" : [ {
         "name" : "user_domain_id",
         "index" : 82,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2515,11 +2100,6 @@
       "outputs" : [ {
         "name" : "user_id",
         "index" : 83,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2545,11 +2125,6 @@
       "outputs" : [ {
         "name" : "utm_campaign",
         "index" : 84,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2575,11 +2150,6 @@
       "outputs" : [ {
         "name" : "utm_content",
         "index" : 85,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2605,11 +2175,6 @@
       "outputs" : [ {
         "name" : "utm_medium",
         "index" : 86,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2635,11 +2200,6 @@
       "outputs" : [ {
         "name" : "utm_source",
         "index" : 87,
-        "outputType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
         "warnings" : [ ]
       } ],
       "field" : {
@@ -2660,6 +2220,87 @@
         "isAggregationField" : false,
         "isFromInline" : false
       }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "data.event_name:string NOT IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed') IS DISTINCT FROM false",
+        "field" : {
+          "name" : "__WHERE_filter_0__",
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "data.event_name:string NOT IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed')",
+          "feature" : {
+            "clazz" : "BooleanFeatures$NotFilterV2"
+          },
+          "featureInputs" : [ {
+            "clazz" : "InlineFeatureInput",
+            "nativeType" : {
+              "name" : "boolean",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "dsl" : "data.event_name:string IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed')",
+            "feature" : {
+              "clazz" : "StringFeatures$SetFilter",
+              "set" : "$broker.started\r\n$node.connected\r\ncache.clean.users\r\n$api.aliases.regenerated\r\n$node.disconnected\r\n$services.changed\r\n"
+            },
+            "featureInputs" : [ {
+              "clazz" : "FieldFeatureInput",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              },
+              "field" : {
+                "name" : "data.event_name",
+                "nativeType" : {
+                  "name" : "string",
+                  "isArray" : false,
+                  "subFields" : [ ]
+                }
+              },
+              "isAggregationField" : false,
+              "isFromInline" : false
+            } ],
+            "infix" : true
+          } ],
+          "infix" : true
+        }, {
+          "clazz" : "LiteralFeatureInput",
+          "literal" : false,
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        } ],
+        "feature" : {
+          "clazz" : "DistinctFromFilter"
+        },
+        "filterParameters" : {
+          "enabled" : true,
+          "inverted" : false,
+          "filterSort" : 0
+        },
+        "inline" : true,
+        "id" : "a1eb03ef-51f7-441a-a8ee-1e3d9eb95014",
+        "infix" : true,
+        "blockId" : "7fa83efa-ef4f-4314-86db-112d33c7976c",
+        "pathForRead" : { }
+      }
     } ],
     "softRetention" : false,
     "addTimeField" : true,
@@ -2671,13 +2312,18 @@
     "shouldFlatten" : true
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-07T07:39:00Z",
-  "endExecutionAt" : "2023-02-06T03:32:00Z",
+  "startExecutionFrom" : "2023-02-06T03:32:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "da21abab-1f01-452d-957d-9497b077bccd",
+    "rootId" : "da21abab-1f01-452d-957d-9497b077bccd",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -2686,15 +2332,30 @@
   "outputSharding" : {
     "clazz" : "NoOperationParallelism"
   },
-  "earliestStartExecutionFrom" : "2023-02-07T07:39:00Z",
+  "earliestStartExecutionFrom" : "2023-02-06T03:32:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
   "workspaces" : [ ],
   "reportingTags" : "",
-  "blocks" : [ ],
+  "blocks" : [ {
+    "id" : "7fa83efa-ef4f-4314-86db-112d33c7976c",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2023-02-07T07:55:10.162204956Z\nSELECT data.application AS application:STRING,\n       data.avatarUrl AS avatarUrl:STRING,\n       data.browser_language AS browser_language:STRING,\n       data.browser_name AS browser_name:STRING,\n       data.browser_user_agent AS browser_user_agent:STRING,\n       data.click_id AS click_id:STRING,\n       data.contextType AS contextType:STRING,\n       data.contexts AS contexts:STRING,\n       data.createdAt AS createdAt:STRING,\n       data.created_at AS created_at:NUMBER,\n       data.created_at_local AS created_at_local:NUMBER,\n       data.device.client.engine AS \"device.client.engine\":STRING,\n       data.device.client.engineVersion AS \"device.client.engineVersion\":STRING,\n       data.device.client.name AS \"device.client.name\":STRING,\n       data.device.client.type AS \"device.client.type\":STRING,\n       data.device.client.version AS \"device.client.version\":STRING,\n       data.device.device.brand AS \"device.device.brand\":STRING,\n       data.device.device.model AS \"device.device.model\":STRING,\n       data.device.device.type AS \"device.device.type\":STRING,\n       data.device.os.name AS \"device.os.name\":STRING,\n       data.device.os.platform AS \"device.os.platform\":STRING,\n       data.device.os.version AS \"device.os.version\":STRING,\n       data.device_is_mobile AS device_is_mobile:BOOLEAN,\n       data.device_type AS device_type:STRING,\n       data.event AS event:STRING,\n       data.event_id AS event_id:STRING,\n       data.event_name AS event_name:STRING,\n       data.event_name_x AS event_name_x:STRING,\n       data.event_timestamp AS event_timestamp:STRING,\n       data.event_timestamp_unix AS event_timestamp_unix:NUMBER,\n       data.event_type AS event_type:STRING,\n       data.external_auth AS external_auth:STRING,\n       data.firstName AS firstName:STRING,\n       data.game_id AS game_id:NUMBER,\n       data.geo.ip AS \"geo.ip\":STRING,\n       data.geo.locale AS \"geo.locale\":STRING,\n       data.geo_country AS geo_country:STRING,\n       data.geo_latitude AS geo_latitude:STRING,\n       data.geo_longitude AS geo_longitude:STRING,\n       data.geo_region_name AS geo_region_name:STRING,\n       data.geo_timezone AS geo_timezone:STRING,\n       data.handle AS handle:STRING,\n       data.id AS id:STRING,\n       data.inserted_at AS inserted_at:NUMBER,\n       data.ip AS ip:STRING,\n       data.ip_address AS ip_address:STRING,\n       data.keyCiphertext AS keyCiphertext:STRING,\n       data.lastName AS lastName:STRING,\n       data.localService AS localService:BOOLEAN,\n       data.name AS name:STRING,\n       data.nickname AS nickname:STRING,\n       data.os AS os:STRING,\n       data.os_name AS os_name:STRING,\n       data.os_timezone AS os_timezone:STRING,\n       data.page_url AS page_url:STRING,\n       data.page_url_path AS page_url_path:STRING,\n       data.params.id AS \"params.id\":STRING,\n       data.parentId AS parentId:STRING,\n       data.properties.\"$insert_id\" AS \"properties.$insert_id\":STRING,\n       data.properties.distinct_id AS \"properties.distinct_id\":STRING,\n       data.properties.ludeo_id:number AS \"properties.ludeo_id\":NUMBER,\n       data.properties.ludeo_id:string AS \"properties.ludeo_id_1\":STRING,\n       data.properties.ludeo_name AS \"properties.ludeo_name\":STRING,\n       data.properties.score AS \"properties.score\":STRING,\n       data.properties.time AS \"properties.time\":NUMBER,\n       data.properties.title AS \"properties.title\":STRING,\n       data.properties.url AS \"properties.url\":STRING,\n       data.reconnected AS reconnected:BOOLEAN,\n       data.referer_medium AS referer_medium:STRING,\n       data.referer_url AS referer_url:STRING,\n       data.referer_url_port AS referer_url_port:STRING,\n       data.referer_url_scheme AS referer_url_scheme:STRING,\n       data.schema_version AS schema_version:STRING,\n       data.session_id AS session_id:STRING,\n       data.source AS source:STRING,\n       data.status AS status:STRING,\n       data.steamLink AS steamLink:STRING,\n       data.uid AS uid:STRING,\n       data.unexpected AS unexpected:BOOLEAN,\n       data.updatedAt AS updatedAt:STRING,\n       data.userId AS userId:STRING,\n       data.user_custom_id AS user_custom_id:STRING,\n       data.user_domain_id AS user_domain_id:STRING,\n       data.user_id AS user_id:STRING,\n       data.utm_campaign AS utm_campaign:STRING,\n       data.utm_content AS utm_content:STRING,\n       data.utm_medium AS utm_medium:STRING,\n       data.utm_source AS utm_source:STRING\n  FROM \"0-kinesis_events_classic\"  \nWHERE data.event_name NOT IN ('$broker.started', '$node.connected', 'cache.clean.users', '$api.aliases.regenerated', '$node.disconnected', '$services.changed') IS DISTINCT FROM false  \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
   "groupByDeletion" : true,
   "eventTypes" : [ ],
   "inputInterval" : 1,
   "restrictions" : [ ],
-  "deployTime" : "2023-02-07T07:39:20.410715655Z",
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-02-07T07:55:35.072245792Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -2706,5 +2367,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 1
+  "versionNumber" : 2
 }
