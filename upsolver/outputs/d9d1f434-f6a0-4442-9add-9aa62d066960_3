@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_2",
+  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_3",
   "displayData" : {
     "name" : "events_pipeline",
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-07T10:25:49.334940462Z",
+    "modifiedTime" : "2023-02-07T17:48:31.816830544Z",
     "modifiedBy" : {
-      "value" : " (bar.z@ludeo.com)"
+      "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "814ba746-a0c1-421e-a0f1-40322f8a2d96"
+    "versionId" : "76832fce-621f-4066-999d-d26fa54d539c"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -220,7 +220,7 @@
       "outputs" : [ ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
-        "dsl" : "data.event_name:string IN ('ludeos.failed-to-attach-media', 'ludeos.created', 'users.complete-registration', 'users.updated', 'ludeos.failed-to-create', 'ludeos.successfully-attached-media', 'ludeos.updated', 'ludeos.deleted', 'users.created', 'users.deleted', 'users.feedback-created', 'users.loggedOut', 'users.unbanned', 'users.create-play-session-request', 'ludeos.draft-ludeo-created', 'users.loggedIn', 'users.banned')",
+        "dsl" : "data.event_name:string IN ('ludeos.failed-to-attach-media', 'ludeos.created', 'users.complete-registration', 'users.updated', 'ludeos.failed-to-create', 'ludeos.successfully-attached-media', 'ludeos.updated', 'ludeos.deleted', 'users.created', 'steam_login-clicked', 'users.deleted', 'users.feedback-created', 'users.loggedOut', 'users.unbanned', 'users.create-play-session-request', 'ludeos.draft-ludeo-created', 'users.loggedIn', 'users.banned')",
         "field" : {
           "name" : "__WHERE_filter_0__",
           "nativeType" : {
@@ -249,7 +249,7 @@
         } ],
         "feature" : {
           "clazz" : "StringFeatures$SetFilter",
-          "set" : "ludeos.failed-to-attach-media\r\nludeos.created\r\nusers.complete-registration\r\nusers.updated\r\nludeos.failed-to-create\r\nludeos.successfully-attached-media\r\nludeos.updated\r\nludeos.deleted\r\nusers.created\r\nusers.deleted\r\nusers.feedback-created\r\nusers.loggedOut\r\nusers.unbanned\r\nusers.create-play-session-request\r\nludeos.draft-ludeo-created\r\nusers.loggedIn\r\nusers.banned\r\n"
+          "set" : "ludeos.failed-to-attach-media\r\nludeos.created\r\nusers.complete-registration\r\nusers.updated\r\nludeos.failed-to-create\r\nludeos.successfully-attached-media\r\nludeos.updated\r\nludeos.deleted\r\nusers.created\r\nsteam_login-clicked\r\nusers.deleted\r\nusers.feedback-created\r\nusers.loggedOut\r\nusers.unbanned\r\nusers.create-play-session-request\r\nludeos.draft-ludeo-created\r\nusers.loggedIn\r\nusers.banned\r\n"
         },
         "filterParameters" : {
           "enabled" : true,
@@ -273,17 +273,16 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-06T05:44:00Z",
-  "endExecutionAt" : "2023-02-01T01:59:00Z",
+  "startExecutionFrom" : "2023-02-01T01:59:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
+    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_2",
     "rootId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
-    "currentVersion" : 2,
+    "currentVersion" : 3,
     "isCorrection" : false
   },
   "version" : 75,
@@ -294,7 +293,7 @@
   "outputSharding" : {
     "clazz" : "NoOperationParallelism"
   },
-  "earliestStartExecutionFrom" : "2023-02-06T05:44:00Z",
+  "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
   "executionState" : {
     "clazz" : "ExecutionState$Running"
   },
@@ -303,7 +302,7 @@
   "blocks" : [ {
     "id" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,data.createdAt AS createdAt:STRING,data.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      where\n      data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request')\n",
+    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,data.createdAt AS createdAt:STRING,data.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      where\n      data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request','steam_login-clicked')\n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -317,7 +316,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-07T10:25:49.054314510Z",
+  "deployTime" : "2023-02-07T17:48:44.159234615Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -329,5 +328,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 2
+  "versionNumber" : 3
 }
