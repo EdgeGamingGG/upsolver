@@ -8,11 +8,11 @@
     "description" : "Duplicate of events_to_mixpanel",
     "creationTime" : "2023-02-15T14:34:24.917350624Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-15T15:17:48.418125109Z",
+    "modifiedTime" : "2023-02-15T15:18:26.291230167Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "be06e581-5ad8-40e8-8da8-53434ec96414"
+    "versionId" : "c85527ee-0fef-4b7d-832a-a018a3318e08"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -844,7 +844,7 @@
   "startExecutionFrom" : "2023-02-15T11:50:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -881,7 +881,7 @@
   },
   "deployTime" : "2023-02-15T15:17:48.138016234Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
