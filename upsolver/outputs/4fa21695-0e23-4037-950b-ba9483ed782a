@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-02-15T09:13:56.307983380Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-15T09:22:45.513250126Z",
+    "modifiedTime" : "2023-02-15T09:22:58.093606474Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "75bd6bf4-3542-479c-aa3b-2732b058961a"
+    "versionId" : "fe7acce4-6a7a-4aad-a613-bbf31d0d4dcd"
   },
   "inputs" : [ "d9d1f434-f6a0-4442-9add-9aa62d066960" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -137,7 +137,7 @@
   "startExecutionFrom" : "2023-02-04T12:17:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -170,7 +170,7 @@
   },
   "deployTime" : "2023-02-15T09:22:57.813242206Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
