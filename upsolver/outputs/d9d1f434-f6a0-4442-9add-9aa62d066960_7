@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_6",
+  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_7",
   "displayData" : {
     "name" : "events_pipeline",
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-15T11:13:11.020752684Z",
+    "modifiedTime" : "2023-02-15T11:14:07.048948052Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "8dfc30da-880c-4090-a2b3-45bd91956a9c"
+    "versionId" : "b4813294-d35e-4dce-b5bf-5d625c11205f"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -276,8 +276,8 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-03T11:48:00Z",
-  "endExecutionAt" : "2023-02-14T16:10:00Z",
+  "startExecutionFrom" : "2023-02-04T07:01:00Z",
+  "endExecutionAt" : "2023-02-14T16:14:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
@@ -286,7 +286,7 @@
   "link" : {
     "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_5",
     "rootId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
-    "currentVersion" : 6,
+    "currentVersion" : 7,
     "isCorrection" : true
   },
   "version" : 75,
@@ -320,7 +320,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-15T11:13:10.732790958Z",
+  "deployTime" : "2023-02-15T11:14:20.673681426Z",
   "status" : {
     "clazz" : "Correction"
   },
@@ -332,5 +332,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 6
+  "versionNumber" : 7
 }
