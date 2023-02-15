@@ -1,0 +1,334 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "a953b76a-01ce-456c-b6e7-1e0b72b35671",
+  "displayData" : {
+    "name" : "login table",
+    "description" : "",
+    "creationTime" : "2023-02-15T12:22:48.514195170Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedTime" : "2023-02-15T12:30:11.114581798Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "36478840-eaca-4d69-93f6-6c86235fd9ad"
+  },
+  "inputs" : [ "d9d1f434-f6a0-4442-9add-9aa62d066960" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : true,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "UpsolverOutputParameters",
+    "outputFields" : [ {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : null,
+        "field" : {
+          "name" : "blablabla",
+          "nativeType" : {
+            "name" : "lookup_1793f420-4e4f-4006-aada-dad818ab0611",
+            "isArray" : false,
+            "subFields" : [ {
+              "name" : "user_id",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            }, {
+              "name" : "uid",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            }, {
+              "name" : "timestamp_of_first_appearance",
+              "nativeType" : {
+                "name" : "number",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            } ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "user_id",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        }, {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "uid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        }, {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "time",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "TemplateLookupFeature",
+          "indexId" : "1793f420-4e4f-4006-aada-dad818ab0611",
+          "aggregations" : [ {
+            "clazz" : "NewIndexAggregation",
+            "name" : "user_id",
+            "operation" : {
+              "clazz" : "AggregationType$Last"
+            },
+            "inputFields" : [ {
+              "clazz" : "FieldFeatureInput",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              },
+              "field" : {
+                "name" : "user_id",
+                "nativeType" : {
+                  "name" : "string",
+                  "isArray" : false,
+                  "subFields" : [ ]
+                }
+              },
+              "isAggregationField" : false,
+              "isFromInline" : false
+            } ],
+            "expirationWindow" : 14400000,
+            "isKeyColumn" : true,
+            "withBitmaps" : false,
+            "maximumExpirationWindow" : 14400000,
+            "returnType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "clazz" : "NewIndexAggregation",
+            "name" : "uid",
+            "operation" : {
+              "clazz" : "AggregationType$Last"
+            },
+            "inputFields" : [ {
+              "clazz" : "FieldFeatureInput",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              },
+              "field" : {
+                "name" : "uid",
+                "nativeType" : {
+                  "name" : "string",
+                  "isArray" : false,
+                  "subFields" : [ ]
+                }
+              },
+              "isAggregationField" : false,
+              "isFromInline" : false
+            } ],
+            "expirationWindow" : 14400000,
+            "isKeyColumn" : true,
+            "withBitmaps" : false,
+            "maximumExpirationWindow" : 14400000,
+            "returnType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          }, {
+            "clazz" : "NewIndexAggregation",
+            "name" : "timestamp_of_first_appearance",
+            "operation" : {
+              "clazz" : "AggregationType$Min"
+            },
+            "inputFields" : [ {
+              "clazz" : "FieldFeatureInput",
+              "nativeType" : {
+                "name" : "number",
+                "isArray" : false,
+                "subFields" : [ ]
+              },
+              "field" : {
+                "name" : "processing_time",
+                "nativeType" : {
+                  "name" : "number",
+                  "isArray" : false,
+                  "subFields" : [ ]
+                }
+              },
+              "isAggregationField" : false,
+              "isFromInline" : false
+            } ],
+            "expirationWindow" : 14400000,
+            "isKeyColumn" : false,
+            "withBitmaps" : false,
+            "maximumExpirationWindow" : 14400000,
+            "returnType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          } ],
+          "timeOffset" : 0,
+          "useLatestSnapshot" : false,
+          "innerJoin" : false,
+          "useMutatedIndex" : false,
+          "useIndexLatestReadyTime" : false
+        },
+        "inline" : true,
+        "id" : "8c647f15-4e49-3b4f-8ff0-8d97f18feaf3",
+        "infix" : false,
+        "blockId" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "KeyColumnOutput",
+      "outputs" : [ {
+        "name" : "uid",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "uid",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "KeyColumnOutput",
+      "outputs" : [ {
+        "name" : "user_id",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "user_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "softRetention" : false,
+    "addTimeField" : true,
+    "path" : "",
+    "mandatory" : {
+      "clazz" : "MandatoryUpsolverOutputParameters",
+      "connection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "shouldFlatten" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-02-01T01:59:00Z",
+  "endExecutionAt" : "2023-02-15T03:56:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
+    "title" : "Select Block",
+    "expression" : "\n// GENERATED @ 2023-02-15T12:24:54.056411905Z\nSELECT uid , user_id\n  FROM \"events_pipeline\" LEFT OUTER JOIN  \"steam login logout 2 (1)\" blablabla ON blablabla.user_id = user_id\n     AND blablabla.uid = uid \ngroup by 1,2",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-02-15T12:30:39.690467033Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "1793f420-4e4f-4006-aada-dad818ab0611", "d9d1f434-f6a0-4442-9add-9aa62d066960" ],
+  "versionNumber" : 1
+}
