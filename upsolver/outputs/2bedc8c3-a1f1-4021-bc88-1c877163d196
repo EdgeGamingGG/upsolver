@@ -4,15 +4,15 @@
   "supportMapSameKeyMultipleTimes" : false,
   "id" : "2bedc8c3-a1f1-4021-bc88-1c877163d196",
   "displayData" : {
-    "name" : "events_to_mixpanel_dup",
+    "name" : "events_to_mixpanel",
     "description" : "Duplicate of events_to_mixpanel",
     "creationTime" : "2023-02-15T14:34:24.917350624Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-15T15:14:25.771694667Z",
+    "modifiedTime" : "2023-02-15T15:17:48.418125109Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "9cc87186-9208-4a08-9678-c2dd9fe48f2c"
+    "versionId" : "be06e581-5ad8-40e8-8da8-53434ec96414"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
