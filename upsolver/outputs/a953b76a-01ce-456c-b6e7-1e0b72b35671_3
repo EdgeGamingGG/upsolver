@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "a953b76a-01ce-456c-b6e7-1e0b72b35671_2",
+  "id" : "a953b76a-01ce-456c-b6e7-1e0b72b35671_3",
   "displayData" : {
     "name" : "login table",
     "description" : "",
     "creationTime" : "2023-02-15T12:22:48.514195170Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-15T12:36:38.381005403Z",
+    "modifiedTime" : "2023-02-15T12:52:48.248957851Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "9ea9f1a6-18d9-4618-9506-975706639a3d"
+    "versionId" : "d572b4f2-c8e8-41f5-aebf-1119227df405"
   },
   "inputs" : [ "d9d1f434-f6a0-4442-9add-9aa62d066960" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -217,7 +217,7 @@
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
-        "id" : "8c647f15-4e49-3b4f-8ff0-8d97f18feaf3",
+        "id" : "e05025cb-2f1d-4b19-97f7-2612e255e572",
         "infix" : false,
         "blockId" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
         "pathForRead" : { }
@@ -364,6 +364,66 @@
         "blockId" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
         "pathForRead" : { }
       }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "blablabla.uid IS NULL",
+        "field" : {
+          "name" : "__WHERE_filter_2__",
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "blablabla.uid IS NOT NULL",
+          "feature" : {
+            "clazz" : "AnyFeatures$ExistsV2"
+          },
+          "featureInputs" : [ {
+            "clazz" : "PointerFeatureInput",
+            "featureId" : "e05025cb-2f1d-4b19-97f7-2612e255e572",
+            "subField" : "uid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "blablabla.uid",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false
+          } ],
+          "infix" : true
+        } ],
+        "feature" : {
+          "clazz" : "BooleanFeatures$NotFilterV2"
+        },
+        "filterParameters" : {
+          "enabled" : true,
+          "inverted" : false,
+          "filterSort" : 2
+        },
+        "inline" : true,
+        "id" : "f783024b-3562-43d5-bcee-761f1fc72daf",
+        "infix" : true,
+        "blockId" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
+        "pathForRead" : { }
+      }
     } ],
     "softRetention" : false,
     "addTimeField" : true,
@@ -375,17 +435,17 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-03T14:38:00Z",
-  "endExecutionAt" : "2023-02-03T23:18:00Z",
+  "startExecutionFrom" : "2023-02-03T23:18:00Z",
+  "endExecutionAt" : "2023-02-15T03:56:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "a953b76a-01ce-456c-b6e7-1e0b72b35671",
+    "parentId" : "a953b76a-01ce-456c-b6e7-1e0b72b35671_2",
     "rootId" : "a953b76a-01ce-456c-b6e7-1e0b72b35671",
-    "currentVersion" : 2,
+    "currentVersion" : 3,
     "isCorrection" : false
   },
   "version" : 75,
@@ -399,14 +459,14 @@
   "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
   "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "bceba2b2-d3ef-4ed0-8a94-c911733fd85d",
     "title" : "Select Block",
-    "expression" : "\n// GENERATED @ 2023-02-15T12:24:54.056411905Z\nSELECT uid , user_id\n  FROM \"events_pipeline\" LEFT OUTER JOIN  \"steam login logout 2 (1)\" blablabla ON blablabla.user_id = user_id\n     AND blablabla.uid = uid \n    where uid is not null and user_id is not null\ngroup by 1,2",
+    "expression" : "\n// GENERATED @ 2023-02-15T12:24:54.056411905Z\nSELECT uid , user_id\n  FROM \"events_pipeline\" LEFT OUTER JOIN  \"steam login logout 2 (1)\" blablabla ON blablabla.user_id = user_id\n     AND blablabla.uid = uid \n    where uid is not null and user_id is not null and  blablabla.uid is null\ngroup by 1,2",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -420,7 +480,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-15T12:36:38.096933058Z",
+  "deployTime" : "2023-02-15T12:53:25.219579992Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -432,5 +492,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "1793f420-4e4f-4006-aada-dad818ab0611", "d9d1f434-f6a0-4442-9add-9aa62d066960" ],
-  "versionNumber" : 2
+  "versionNumber" : 3
 }
