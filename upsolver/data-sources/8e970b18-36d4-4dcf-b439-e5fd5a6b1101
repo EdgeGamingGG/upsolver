@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-01-15T12:25:31.571563591Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedTime" : "2023-02-06T13:27:39.863642492Z",
+    "modifiedTime" : "2023-02-06T15:43:13.438087388Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "7d913964-2d5c-4515-9a11-74152689dfee"
+    "versionId" : "2d9e7977-bb8e-46eb-b45b-9ee1e0dcf4dd"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -77,7 +77,7 @@
   "reportingTags" : "",
   "previewId" : "0947fa96df3a0233419d6b35edb6c478",
   "addBatcherTag" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "isUnsynchronized" : false,
   "shards" : 1,
@@ -87,7 +87,7 @@
     "displayValue" : "Manual - Shards"
   },
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "safeStartTime" : "2023-01-14T12:25:00Z"
 }
