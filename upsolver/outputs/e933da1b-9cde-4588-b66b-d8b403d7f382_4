@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "e933da1b-9cde-4588-b66b-d8b403d7f382_3",
+  "id" : "e933da1b-9cde-4588-b66b-d8b403d7f382_4",
   "displayData" : {
     "name" : "prep_events_to_mixpanel",
     "description" : "",
     "creationTime" : "2023-02-15T21:07:22.428986849Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-15T21:52:48.066199475Z",
+    "modifiedTime" : "2023-02-15T22:21:54.980001043Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "6fe2db65-ad5a-4dbd-922e-9e157d0629d1"
+    "versionId" : "d69b5b12-9b25-4480-a21d-ab4f9dc8c2c1"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -66,160 +66,10 @@
         "pathForRead" : { }
       }
     }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "event_id",
-        "index" : 1,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.event_id",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "event_name",
-        "index" : 2,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.event_name",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "user_id",
-        "index" : 3,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.user_id",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "uid",
-        "index" : 4,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.uid",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "source",
-        "index" : 5,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.source",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "application",
-        "index" : 6,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.application",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "created_at",
-        "index" : 7,
+        "index" : 1,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
@@ -263,15 +113,227 @@
     }, {
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
-        "name" : "created_at_local",
+        "name" : "distinct_id",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "COALESCE(data.user_id:string, data.uid:string)",
+        "field" : {
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_2",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "featureInputs" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.user_id",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        }, {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.uid",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "feature" : {
+          "clazz" : "StringFeatures$Coalesce2Feature"
+        },
+        "inline" : true,
+        "id" : "92b11802-109c-45b6-a609-4134ea49cd1a",
+        "infix" : false,
+        "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
+        "pathForRead" : { }
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "$anon_distinct_id",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.uid",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "$insert_id",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "event",
+        "index" : 5,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "user_id",
+        "index" : 6,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.user_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "source",
+        "index" : 7,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.source",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "application",
         "index" : 8,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.application",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawCalculatedFieldOutput",
+      "outputs" : [ {
+        "name" : "created_at_local",
+        "index" : 9,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "UNIX_EPOCH_TO_DATE(data.created_at_local:number)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_2",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_3",
           "nativeType" : {
             "name" : "instant",
             "isArray" : false,
@@ -300,7 +362,7 @@
           "clazz" : "NumericFeatures$EpochMillisToInstant"
         },
         "inline" : true,
-        "id" : "92b11802-109c-45b6-a609-4134ea49cd1a",
+        "id" : "4ffc4e14-91e3-482d-925a-0f509bcb7a58",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -309,14 +371,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "server_time",
-        "index" : 9,
+        "index" : 10,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "UNIX_EPOCH_TO_DATE(data.inserted_at:number)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_3",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_4",
           "nativeType" : {
             "name" : "instant",
             "isArray" : false,
@@ -345,7 +407,7 @@
           "clazz" : "NumericFeatures$EpochMillisToInstant"
         },
         "inline" : true,
-        "id" : "4ffc4e14-91e3-482d-925a-0f509bcb7a58",
+        "id" : "0422cee7-d882-4e6a-8afd-3ce9b6fab9a4",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -354,14 +416,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "country_name",
-        "index" : 10,
+        "index" : 11,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('Country Name', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_4",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_5",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -391,7 +453,7 @@
           "attributes" : [ "Country Name" ]
         },
         "inline" : true,
-        "id" : "0422cee7-d882-4e6a-8afd-3ce9b6fab9a4",
+        "id" : "f5e32261-f28e-4acb-b815-5f1a3ba8c914",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -400,14 +462,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "country_iso",
-        "index" : 11,
+        "index" : 12,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('Country Iso Code', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_5",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_6",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -437,7 +499,7 @@
           "attributes" : [ "Country Iso Code" ]
         },
         "inline" : true,
-        "id" : "f5e32261-f28e-4acb-b815-5f1a3ba8c914",
+        "id" : "6ddbeda3-c05b-4e87-be8f-3071e242155d",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -446,14 +508,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "continent_name",
-        "index" : 12,
+        "index" : 13,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('Continent Name', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_6",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_7",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -483,7 +545,7 @@
           "attributes" : [ "Continent Name" ]
         },
         "inline" : true,
-        "id" : "6ddbeda3-c05b-4e87-be8f-3071e242155d",
+        "id" : "a9adf293-2e41-49a7-90f5-4df40031da3c",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -492,14 +554,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "continent_iso",
-        "index" : 13,
+        "index" : 14,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('Continent Code', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_7",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_8",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -529,7 +591,7 @@
           "attributes" : [ "Continent Code" ]
         },
         "inline" : true,
-        "id" : "a9adf293-2e41-49a7-90f5-4df40031da3c",
+        "id" : "7bcd1b22-e23d-4475-ac6c-03b2163386a3",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -538,14 +600,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "city_name",
-        "index" : 14,
+        "index" : 15,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('City Name', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_8",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_9",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -575,7 +637,7 @@
           "attributes" : [ "City Name" ]
         },
         "inline" : true,
-        "id" : "7bcd1b22-e23d-4475-ac6c-03b2163386a3",
+        "id" : "dd876187-6f23-4f83-9b22-9490703290cc",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -584,14 +646,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "subdivision_name",
-        "index" : 15,
+        "index" : 16,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "GEO_IP('Subdivision 1 Name', data.geo.ip:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_9",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_10",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -621,7 +683,7 @@
           "attributes" : [ "Subdivision 1 Name" ]
         },
         "inline" : true,
-        "id" : "dd876187-6f23-4f83-9b22-9490703290cc",
+        "id" : "3eee58ba-8dbc-4181-b389-53d07e41cee7",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -630,7 +692,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "device_type",
-        "index" : 16,
+        "index" : 17,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -655,7 +717,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "device_brand",
-        "index" : 17,
+        "index" : 18,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -680,7 +742,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "os_name",
-        "index" : 18,
+        "index" : 19,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -705,7 +767,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "os_version",
-        "index" : 19,
+        "index" : 20,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -730,7 +792,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "client_type",
-        "index" : 20,
+        "index" : 21,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -755,7 +817,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "client_name",
-        "index" : 21,
+        "index" : 22,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -780,7 +842,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "client_version",
-        "index" : 22,
+        "index" : 23,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -805,14 +867,14 @@
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "properties",
-        "index" : 23,
+        "index" : 24,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
         "dsl" : "RECORD_TO_JSON(data.properties.url:string)",
         "field" : {
-          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_10",
+          "name" : "undefined-value-b72f3117-841d-46b0-8364-48bc8ae6f1ae_11",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -841,7 +903,7 @@
           "clazz" : "AnyFeatures$RecordToJsonFeature"
         },
         "inline" : true,
-        "id" : "3eee58ba-8dbc-4181-b389-53d07e41cee7",
+        "id" : "a7a458ec-39c2-4951-bb30-caefa356a609",
         "infix" : false,
         "blockId" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
         "pathForRead" : { }
@@ -912,16 +974,15 @@
   },
   "outputInterval" : 1,
   "startExecutionFrom" : "2023-02-15T11:50:00Z",
-  "endExecutionAt" : "2023-02-15T11:50:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "e933da1b-9cde-4588-b66b-d8b403d7f382_2",
+    "parentId" : "e933da1b-9cde-4588-b66b-d8b403d7f382_3",
     "rootId" : "e933da1b-9cde-4588-b66b-d8b403d7f382",
-    "currentVersion" : 3,
+    "currentVersion" : 4,
     "isCorrection" : false
   },
   "version" : 75,
@@ -941,7 +1002,7 @@
   "blocks" : [ {
     "id" : "74112cac-0d23-4775-873c-fdb3c9c8a58c",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-15T21:00:54.398659927Z\nSELECT UNIX_EPOCH_TO_DATE(time) AS processing_time,\n       data.event_id AS event_id,\n       data.event_name AS event_name,\n       data.user_id AS user_id,\n       data.uid AS uid,\n       data.source AS source,\n       data.application AS application,\n       UNIX_EPOCH_TO_DATE(data.created_at) AS created_at,\n       UNIX_EPOCH_TO_DATE(data.created_at_local) AS created_at_local,\n       UNIX_EPOCH_TO_DATE(data.inserted_at) AS server_time,\n       GEO_IP('Country Name', data.geo.ip) AS country_name,\n       GEO_IP('Country Iso Code', data.geo.ip) AS country_iso,\n       GEO_IP('Continent Name', data.geo.ip) AS continent_name,\n       GEO_IP('Continent Code', data.geo.ip) AS continent_iso,\n       GEO_IP('City Name', data.geo.ip) AS city_name,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS subdivision_name,\n       data.device.device.type AS device_type,\n       data.device.device.brand AS device_brand,\n       data.device.os.name AS os_name,\n       data.device.os.version AS os_version,\n       data.device.client.type AS client_type,\n       data.device.client.name AS client_name,\n       data.device.client.version AS client_version,\n       RECORD_TO_JSON(data.properties.url) AS properties\n  FROM \"0-kinesis_events_classic\" \n WHERE (data.source = 'client') \n\n\n",
+    "expression" : "// GENERATED @ 2023-02-15T21:00:54.398659927Z\nSELECT UNIX_EPOCH_TO_DATE(time) AS processing_time,\n       UNIX_EPOCH_TO_DATE(data.created_at) AS \"created_at\",\n       COALESCE(data.user_id, data.uid) AS distinct_id,\n       data.uid AS \"$anon_distinct_id\",\n       data.event_id AS \"$insert_id\",\n       data.event_name AS event,\n       data.user_id AS user_id,\n       data.source AS source,\n       data.application AS application,\n       UNIX_EPOCH_TO_DATE(data.created_at_local) AS created_at_local,\n       UNIX_EPOCH_TO_DATE(data.inserted_at) AS server_time,\n       GEO_IP('Country Name', data.geo.ip) AS country_name,\n       GEO_IP('Country Iso Code', data.geo.ip) AS country_iso,\n       GEO_IP('Continent Name', data.geo.ip) AS continent_name,\n       GEO_IP('Continent Code', data.geo.ip) AS continent_iso,\n       GEO_IP('City Name', data.geo.ip) AS city_name,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS subdivision_name,\n       data.device.device.type AS device_type,\n       data.device.device.brand AS device_brand,\n       data.device.os.name AS os_name,\n       data.device.os.version AS os_version,\n       data.device.client.type AS client_type,\n       data.device.client.name AS client_name,\n       data.device.client.version AS client_version,\n       RECORD_TO_JSON(data.properties.url) AS properties\n  FROM \"0-kinesis_events_classic\" \n WHERE (data.source = 'client') \n\n\n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -955,7 +1016,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-15T21:52:47.779448570Z",
+  "deployTime" : "2023-02-15T22:22:54.502439270Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -967,5 +1028,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 3
+  "versionNumber" : 4
 }
