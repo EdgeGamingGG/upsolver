@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-01-15T12:25:31.571563591Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedTime" : "2023-02-16T15:20:08.452761032Z",
+    "modifiedTime" : "2023-02-16T16:45:08.059863477Z",
     "modifiedBy" : {
       "value" : "David Aisenthal (david@upsolver.com)"
     },
-    "versionId" : "5ab61d84-69be-4904-8414-831011852dc1"
+    "versionId" : "518d92ef-55f6-4d02-b9ef-73ab225fd063"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -52,7 +52,13 @@
   "version" : 75,
   "operationParallelism" : {
     "clazz" : "TaskTimeOperationParallelismProvider",
-    "parallelismByTime" : [ ],
+    "parallelismByTime" : [ {
+      "time" : "2023-02-16T16:51:00Z",
+      "totalShards" : 4,
+      "shardingType" : {
+        "clazz" : "ShardingType$ByTask"
+      }
+    } ],
     "defaultTotalShards" : 1,
     "defaultShardType" : {
       "clazz" : "ShardingType$ByTask"
@@ -92,8 +98,8 @@
   "shards" : 4,
   "parallelismType" : {
     "clazz" : "ManualParallelismType",
-    "executionParallelism" : 1,
-    "displayValue" : "Manual - Shards"
+    "executionParallelism" : 4,
+    "displayValue" : "Manual - 4 Shards"
   },
   "status" : {
     "clazz" : "Running"
