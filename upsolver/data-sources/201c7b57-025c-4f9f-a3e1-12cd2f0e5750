@@ -9,8 +9,11 @@
     "description" : "",
     "creationTime" : "2023-02-16T15:04:04.824003099Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedBy" : { },
-    "versionId" : "7e53d92f-7a43-448d-aa13-e83b37f68127"
+    "modifiedTime" : "2023-02-16T15:04:05.317992001Z",
+    "modifiedBy" : {
+      "value" : "David Aisenthal (david@upsolver.com)"
+    },
+    "versionId" : "74681ee7-344f-4b9a-a881-bc350b1a3fd5"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -46,6 +49,10 @@
   "isOnline" : false,
   "isDeleted" : false,
   "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : true
+  },
   "version" : 75,
   "operationParallelism" : {
     "clazz" : "TaskTimeOperationParallelismProvider",
@@ -84,7 +91,7 @@
     "displayValue" : "Manual - Shards"
   },
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Deleting"
   },
   "safeStartTime" : "2023-02-16T15:03:00Z"
 }
