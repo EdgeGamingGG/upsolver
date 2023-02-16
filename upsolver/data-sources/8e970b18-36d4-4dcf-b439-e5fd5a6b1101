@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-01-15T12:25:31.571563591Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedTime" : "2023-02-16T15:19:47.381092046Z",
+    "modifiedTime" : "2023-02-16T15:20:08.452761032Z",
     "modifiedBy" : {
       "value" : "David Aisenthal (david@upsolver.com)"
     },
-    "versionId" : "b2cc272f-269e-42cf-b08e-19fc0cf9bfa5"
+    "versionId" : "5ab61d84-69be-4904-8414-831011852dc1"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -60,7 +60,13 @@
   },
   "newShardParallelism" : {
     "clazz" : "TaskTimeOperationParallelismProvider",
-    "parallelismByTime" : [ ],
+    "parallelismByTime" : [ {
+      "time" : "2023-02-16T16:51:00Z",
+      "totalShards" : 4,
+      "shardingType" : {
+        "clazz" : "ShardingType$ByTask"
+      }
+    } ],
     "defaultTotalShards" : 1,
     "defaultShardType" : {
       "clazz" : "ShardingType$ByTask"
@@ -83,7 +89,7 @@
   "isRunning" : true,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "isUnsynchronized" : false,
-  "shards" : 1,
+  "shards" : 4,
   "parallelismType" : {
     "clazz" : "ManualParallelismType",
     "executionParallelism" : 1,
