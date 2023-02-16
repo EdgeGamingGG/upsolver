@@ -10,7 +10,7 @@
     "modifiedBy" : {
       "value" : "David Aisenthal (david@upsolver.com)"
     },
-    "versionId" : "bd3ea377-18c2-4db6-af37-e908946984b9"
+    "versionId" : "123fdbad-49ab-4b8b-9e26-b46691c9320d"
   },
   "size" : {
     "min" : "XS",
@@ -28,9 +28,10 @@
     "value" : true
   },
   "maxElasticIpsNum" : 1,
+  "instanceTypeOverride" : "m5.4xlarge",
   "nextRestartOperation" : {
     "clazz" : "CustomerEnvironment$RollOperation",
-    "time" : "2023-01-31T12:52:29.217223900Z"
+    "time" : "2023-02-16T10:49:03.756276587Z"
   },
   "writeLogsToUpsolver" : true,
   "runReplayCluster" : false,
@@ -43,8 +44,8 @@
     "amiTagName" : "UpsolverPrivateVpc"
   },
   "isDeleted" : false,
-  "lastUpdatedBy" : "dima@upsolver.com",
-  "lastUpdateTime" : "2023-01-31T12:12:29.972132809Z",
+  "lastUpdatedBy" : "david@upsolver.com",
+  "lastUpdateTime" : "2023-02-16T15:29:03.134656160Z",
   "version" : 75,
   "allowUpsolverSsh" : false,
   "exposePrivateIps" : false,
@@ -80,6 +81,7 @@
   "serverFiles" : [ ],
   "spotinstOverrides" : "",
   "clazz" : "CustomerEnvironment",
+  "serverType" : "2 (m5.4xlarge - 16 cores, 64GB RAM)",
   "status" : {
     "clazz" : "Running"
   }
