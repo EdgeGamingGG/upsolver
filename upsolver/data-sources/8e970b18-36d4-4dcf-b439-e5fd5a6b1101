@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-01-15T12:25:31.571563591Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedTime" : "2023-02-15T11:56:06.868590005Z",
+    "modifiedTime" : "2023-02-16T13:28:27.059803415Z",
     "modifiedBy" : {
-      "value" : " (bar.z@ludeo.com)"
+      "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "f9ec6663-92bb-4a3b-9a2d-f6341dd80a26"
+    "versionId" : "35b3fd5c-9d2f-4e6c-b78a-26c01978bae6"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -67,6 +67,7 @@
     }
   },
   "onlineProcessingParallelism" : 1,
+  "endExecutionAt" : "2023-02-15T00:00:00Z",
   "readFromStart" : true,
   "storeRawData" : false,
   "compression" : {
@@ -75,6 +76,9 @@
   },
   "workspaces" : [ "6f0b3243-fc50-4971-9216-01d45f67702a" ],
   "reportingTags" : "",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
   "previewId" : "0947fa96df3a0233419d6b35edb6c478",
   "addBatcherTag" : false,
   "isRunning" : true,
