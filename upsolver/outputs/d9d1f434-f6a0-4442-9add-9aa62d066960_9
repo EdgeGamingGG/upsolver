@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_2",
+  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_9",
   "displayData" : {
     "name" : "events_pipeline",
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T07:13:57.224978044Z",
+    "modifiedTime" : "2023-02-19T14:38:27.446177556Z",
     "modifiedBy" : {
-      "value" : " (bar.z@ludeo.com)"
+      "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "81758edb-43b5-4bbd-adb2-8cab71f0ae41"
+    "versionId" : "7316e261-27fe-415e-9f43-c9ed00e2166e"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -118,8 +118,58 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
-        "name" : "updatedAt",
+        "name" : "uid",
         "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.uid",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "session_id",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "updatedAt",
+        "index" : 5,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -144,7 +194,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "id",
-        "index" : 4,
+        "index" : 6,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -168,8 +218,8 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
-        "name" : "userId",
-        "index" : 5,
+        "name" : "user_id",
+        "index" : 7,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -180,7 +230,7 @@
           "subFields" : [ ]
         },
         "field" : {
-          "name" : "data.userId",
+          "name" : "data.user_id",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -194,7 +244,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "event_name",
-        "index" : 6,
+        "index" : 8,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -215,53 +265,6 @@
         "isAggregationField" : false,
         "isFromInline" : false
       }
-    }, {
-      "clazz" : "RawCalculatedFieldOutput",
-      "outputs" : [ ],
-      "featureDefinition" : {
-        "clazz" : "FeatureDefinition",
-        "dsl" : "data.event_name:string IN ('ludeos.failed-to-attach-media', 'ludeos.created', 'users.complete-registration', 'users.updated', 'ludeos.failed-to-create', 'ludeos.successfully-attached-media', 'ludeos.updated', 'ludeos.deleted', 'users.created', 'users.deleted', 'users.feedback-created', 'users.loggedOut', 'users.unbanned', 'users.create-play-session-request', 'ludeos.draft-ludeo-created', 'users.loggedIn', 'users.banned')",
-        "field" : {
-          "name" : "__WHERE_filter_0__",
-          "nativeType" : {
-            "name" : "boolean",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "featureInputs" : [ {
-          "clazz" : "FieldFeatureInput",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          },
-          "field" : {
-            "name" : "data.event_name",
-            "nativeType" : {
-              "name" : "string",
-              "isArray" : false,
-              "subFields" : [ ]
-            }
-          },
-          "isAggregationField" : false,
-          "isFromInline" : false
-        } ],
-        "feature" : {
-          "clazz" : "StringFeatures$SetFilter",
-          "set" : "ludeos.failed-to-attach-media\r\nludeos.created\r\nusers.complete-registration\r\nusers.updated\r\nludeos.failed-to-create\r\nludeos.successfully-attached-media\r\nludeos.updated\r\nludeos.deleted\r\nusers.created\r\nusers.deleted\r\nusers.feedback-created\r\nusers.loggedOut\r\nusers.unbanned\r\nusers.create-play-session-request\r\nludeos.draft-ludeo-created\r\nusers.loggedIn\r\nusers.banned\r\n"
-        },
-        "filterParameters" : {
-          "enabled" : true,
-          "inverted" : false,
-          "filterSort" : 0
-        },
-        "inline" : true,
-        "id" : "f740b6c7-2588-42b2-b2a2-491f41020a1b",
-        "infix" : true,
-        "blockId" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
-        "pathForRead" : { }
-      }
     } ],
     "softRetention" : false,
     "addTimeField" : true,
@@ -273,17 +276,16 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-06T05:44:00Z",
-  "endExecutionAt" : "2023-02-01T01:59:00Z",
+  "startExecutionFrom" : "2023-02-19T14:44:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
+    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_8",
     "rootId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
-    "currentVersion" : 2,
+    "currentVersion" : 9,
     "isCorrection" : false
   },
   "version" : 75,
@@ -294,17 +296,16 @@
   "outputSharding" : {
     "clazz" : "NoOperationParallelism"
   },
-  "earliestStartExecutionFrom" : "2023-02-06T05:44:00Z",
-  "isCompleted" : false,
+  "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
   "executionState" : {
-    "clazz" : "ExecutionState$Completed"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,data.createdAt AS createdAt:STRING,data.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      where\n      data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request')\n",
+    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,\ndata.createdAt AS createdAt:STRING,\ndata.uid AS uid:STRING,\ndata.session_id AS session_id:STRING,\ndata.updatedAt AS updatedAt:STRING,\ndata.id AS id:STRING,\ndata.user_id AS user_id:STRING,\ndata.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      --where\n      --data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request','steam_login-clicked')\n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -318,7 +319,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-07T10:25:49.054314510Z",
+  "deployTime" : "2023-02-19T14:39:27.886884655Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -330,5 +331,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 2
+  "versionNumber" : 9
 }
