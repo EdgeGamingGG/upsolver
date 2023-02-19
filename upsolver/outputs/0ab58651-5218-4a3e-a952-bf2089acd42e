@@ -4,15 +4,15 @@
   "supportMapSameKeyMultipleTimes" : false,
   "id" : "0ab58651-5218-4a3e-a952-bf2089acd42e",
   "displayData" : {
-    "name" : "session enrichment (1)",
+    "name" : "session enrichment",
     "description" : "Duplicate of session enrichment",
     "creationTime" : "2023-02-19T08:10:54.471144868Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T08:15:58.653512988Z",
+    "modifiedTime" : "2023-02-19T08:16:09.557066122Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "05b3d99e-2d78-41df-a002-a61b48c1c22c"
+    "versionId" : "34e4e86a-5a96-4746-8de6-961f1a6bcf75"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
