@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_6",
+  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_8",
   "displayData" : {
     "name" : "events_pipeline",
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-15T11:14:20.957895254Z",
+    "modifiedTime" : "2023-02-19T07:13:37.334741832Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "283155af-116f-481f-8818-d8af34c0e1b4"
+    "versionId" : "aa5ffd32-49a8-4345-83f8-35a2c6bbebb3"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -143,8 +143,33 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
-        "name" : "updatedAt",
+        "name" : "session_id",
         "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "updatedAt",
+        "index" : 5,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -169,7 +194,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "id",
-        "index" : 5,
+        "index" : 6,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -194,31 +219,6 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "userId",
-        "index" : 6,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.userId",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
-        "name" : "user_id",
         "index" : 7,
         "warnings" : [ ]
       } ],
@@ -230,7 +230,7 @@
           "subFields" : [ ]
         },
         "field" : {
-          "name" : "data.user_id",
+          "name" : "data.userId",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -276,8 +276,7 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-03T11:48:00Z",
-  "endExecutionAt" : "2023-02-14T16:10:00Z",
+  "startExecutionFrom" : "2023-02-15T17:30:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
@@ -286,8 +285,8 @@
   "link" : {
     "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_5",
     "rootId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
-    "currentVersion" : 6,
-    "isCorrection" : true
+    "currentVersion" : 8,
+    "isCorrection" : false
   },
   "version" : 75,
   "allowRenaming" : true,
@@ -298,16 +297,15 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
-  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Completed"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,\ndata.createdAt AS createdAt:STRING,\ndata.uid AS uid:STRING,\ndata.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.user_id AS user_id:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      --where\n      --data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request','steam_login-clicked')\n",
+    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,\ndata.createdAt AS createdAt:STRING,\ndata.uid AS uid:STRING,\ndata.session_id AS session_id:STRING,\ndata.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      --where\n      --data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request','steam_login-clicked')\n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -321,9 +319,9 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-15T11:13:10.732790958Z",
+  "deployTime" : "2023-02-19T07:13:56.938082270Z",
   "status" : {
-    "clazz" : "Correction"
+    "clazz" : "Running"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
@@ -333,5 +331,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 6
+  "versionNumber" : 8
 }
