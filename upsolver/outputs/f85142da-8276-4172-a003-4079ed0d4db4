@@ -8,11 +8,11 @@
     "description" : "Duplicate of steam login logout 2 (1)",
     "creationTime" : "2023-02-19T07:02:56.608193362Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T08:18:44.121775786Z",
+    "modifiedTime" : "2023-02-19T08:18:50.935964239Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "a08d5188-af75-4187-a6f0-e11f5b44a43f"
+    "versionId" : "1364315e-6224-4b4f-a4f2-2c974e1c0dcb"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -103,13 +103,13 @@
   "windowSize" : 14400000,
   "startExecutionFrom" : "2023-02-15T17:47:00Z",
   "allowCartesianProducts" : false,
-  "isDeleted" : false,
-  "isRunning" : true,
+  "isDeleted" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "physicalDelete" : {
     "initiated" : true,
-    "shouldRun" : true
+    "shouldRun" : false
   },
   "version" : 75,
   "allowRenaming" : true,
@@ -144,7 +144,7 @@
   },
   "deployTime" : "2023-02-19T07:23:51.267755727Z",
   "status" : {
-    "clazz" : "Deleting"
+    "clazz" : "Archived"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
