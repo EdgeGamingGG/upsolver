@@ -8,11 +8,11 @@
     "description" : "Duplicate of steam login logout 2 (1)",
     "creationTime" : "2023-02-19T07:02:56.608193362Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T07:23:06.207731643Z",
+    "modifiedTime" : "2023-02-19T07:23:51.548337339Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "a2259371-04af-40a2-9503-3934312adce4"
+    "versionId" : "31c7bc21-d7e2-4d35-bd31-d2ac0a61d261"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -104,7 +104,7 @@
   "startExecutionFrom" : "2023-02-15T17:47:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -140,7 +140,7 @@
   },
   "deployTime" : "2023-02-19T07:23:51.267755727Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
