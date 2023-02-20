@@ -4,15 +4,15 @@
   "supportMapSameKeyMultipleTimes" : false,
   "id" : "bf2d7774-08e4-4dae-83ed-61c58266f3a4",
   "displayData" : {
-    "name" : "snowflake - session enrichment",
+    "name" : "snowflake - session agg info",
     "description" : "Duplicate of snowflake - session enrichment ",
     "creationTime" : "2023-02-20T11:05:41.404833473Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T11:06:47.574041997Z",
+    "modifiedTime" : "2023-02-20T11:33:31.583916581Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "62407f0d-464e-4494-a669-84ff4d9d569d"
+    "versionId" : "0a6fe073-7ef0-4387-9b0d-c559385ac4c5"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
