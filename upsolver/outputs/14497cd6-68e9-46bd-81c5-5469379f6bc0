@@ -1,0 +1,1636 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "14497cd6-68e9-46bd-81c5-5469379f6bc0",
+  "displayData" : {
+    "name" : "snowflake - session enrichment ",
+    "description" : "Duplicate of session enrichment",
+    "creationTime" : "2023-02-20T10:29:26.339401514Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedTime" : "2023-02-20T11:04:41.659116852Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "4880a9be-e7ac-43a2-bfa3-8af0bc1834e2"
+  },
+  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : true,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatorySnowflakeOutputParameters",
+      "jdbcConnection" : "86003443-faf8-43f0-a6da-cad3b8e16ad7",
+      "schema" : {
+        "catalog" : "DATALAKE",
+        "name" : "UPSOLVER"
+      },
+      "tableName" : "users_events",
+      "cloudStorageConnection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "outputFields" : [ {
+      "clazz" : "KeyColumnOutput",
+      "outputs" : [ {
+        "name" : "SESSION_ID",
+        "index" : 0,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "session_id",
+          "index" : 0,
+          "warnings" : [ ]
+        }
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "USER_ID",
+        "index" : 1,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "user_id",
+          "index" : 1,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "user_id",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.user_id",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "APPLICATION",
+        "index" : 2,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "application",
+          "index" : 2,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "application",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.application",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CREATED_AT_LOCAL",
+        "index" : 3,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "created_at_local",
+          "index" : 3,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "created_at_local",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "FROM_UNIXTIME(data.created_at_local:number)",
+          "feature" : {
+            "clazz" : "NumericFeatures$FromUnixtimeFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.created_at_local",
+              "nativeType" : {
+                "name" : "number",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "SERVER_TIME",
+        "index" : 4,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "server_time",
+          "index" : 4,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "server_time",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "instant",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "FROM_UNIXTIME(data.inserted_at:number)",
+          "feature" : {
+            "clazz" : "NumericFeatures$FromUnixtimeFeature"
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "number",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.inserted_at",
+              "nativeType" : {
+                "name" : "number",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "instant",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "COUNTRY_NAME",
+        "index" : 5,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "country_name",
+          "index" : 5,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "country_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('Country Name', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "Country Name" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "COUNTRY_ISO",
+        "index" : 6,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "country_iso",
+          "index" : 6,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "country_iso",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('Country Iso Code', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "Country Iso Code" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CONTINENT_NAME",
+        "index" : 7,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "continent_name",
+          "index" : 7,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "continent_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('Continent Name', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "Continent Name" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CONTINENT_ISO",
+        "index" : 8,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "continent_iso",
+          "index" : 8,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "continent_iso",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('Continent Code', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "Continent Code" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CITY_NAME",
+        "index" : 9,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "city_name",
+          "index" : 9,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "city_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('City Name', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "City Name" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "SUBDIVISION_NAME",
+        "index" : 10,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "subdivision_name",
+          "index" : 10,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "subdivision_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "InlineFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "dsl" : "GEO_IP('Subdivision 1 Name', data.geo.ip:string)",
+          "feature" : {
+            "clazz" : "GeoIp",
+            "attributes" : [ "Subdivision 1 Name" ]
+          },
+          "featureInputs" : [ {
+            "clazz" : "FieldFeatureInput",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            },
+            "field" : {
+              "name" : "data.geo.ip",
+              "nativeType" : {
+                "name" : "string",
+                "isArray" : false,
+                "subFields" : [ ]
+              }
+            },
+            "isAggregationField" : false,
+            "isFromInline" : false
+          } ],
+          "infix" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "DEVICE_TYPE",
+        "index" : 11,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "device_type",
+          "index" : 11,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "device_type",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.device.type",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "DEVICE_BRAND",
+        "index" : 12,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "device_brand",
+          "index" : 12,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "device_brand",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.device.brand",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "OS_NAME",
+        "index" : 13,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "os_name",
+          "index" : 13,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "os_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.os.name",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "OS_VERSION",
+        "index" : 14,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "os_version",
+          "index" : 14,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "os_version",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.os.version",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CLIENT_TYPE",
+        "index" : 15,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "client_type",
+          "index" : 15,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "client_type",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.client.type",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CLIENT_NAME",
+        "index" : 16,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "client_name",
+          "index" : 16,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "client_name",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.client.name",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "CLIENT_VERSION",
+        "index" : 17,
+        "warnings" : [ ],
+        "originalOutput" : {
+          "name" : "client_version",
+          "index" : 17,
+          "warnings" : [ ]
+        }
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "client_version",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.device.client.version",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "UTM_CAMPAIGN",
+        "index" : 18,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.utm_campaign)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.utm_campaign",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "UTM_MEDIUM",
+        "index" : 19,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.utm_medium)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.utm_medium",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "UTM_CONTENT",
+        "index" : 20,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.utm_content)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.utm_content",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "UTM_SOURCE",
+        "index" : 21,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.utm_source)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.utm_source",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "REFERER_MEDIUM",
+        "index" : 22,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.referer_medium)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.referer_medium",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "REFERER_URL",
+        "index" : 23,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.referer_url)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.referer_url",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "REFERER_URL_SCHEME",
+        "index" : 24,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.referer_url_scheme)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.referer_url_scheme",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    }, {
+      "clazz" : "AggregationOutput",
+      "outputs" : [ {
+        "name" : "LAST_DATA_IP_ADDRESS",
+        "index" : 25,
+        "warnings" : [ ]
+      } ],
+      "aggregation" : {
+        "clazz" : "NewIndexAggregation",
+        "name" : "LAST(data.ip_address)",
+        "operation" : {
+          "clazz" : "AggregationType$Last"
+        },
+        "inputFields" : [ {
+          "clazz" : "FieldFeatureInput",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          },
+          "field" : {
+            "name" : "data.ip_address",
+            "nativeType" : {
+              "name" : "string",
+              "isArray" : false,
+              "subFields" : [ ]
+            }
+          },
+          "isAggregationField" : false,
+          "isFromInline" : false
+        } ],
+        "isKeyColumn" : false,
+        "withBitmaps" : false,
+        "returnType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        }
+      }
+    } ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "SESSION_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "USER_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "APPLICATION",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CREATED_AT_LOCAL",
+        "columnType" : {
+          "clazz" : "DbDatetime"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "SERVER_TIME",
+        "columnType" : {
+          "clazz" : "DbDatetime"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "COUNTRY_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "COUNTRY_ISO",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CONTINENT_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CONTINENT_ISO",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CITY_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "SUBDIVISION_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "DEVICE_TYPE",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "DEVICE_BRAND",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "OS_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "OS_VERSION",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CLIENT_TYPE",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CLIENT_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CLIENT_VERSION",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "UTM_CAMPAIGN",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "UTM_MEDIUM",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "UTM_CONTENT",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "UTM_SOURCE",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "REFERER_MEDIUM",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "REFERER_URL",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "REFERER_URL_SCHEME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "LAST_DATA_IP_ADDRESS",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USER_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "APPLICATION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATED_AT_LOCAL",
+      "info" : {
+        "typeName" : "TIMESTAMPNTZ",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SERVER_TIME",
+      "info" : {
+        "typeName" : "TIMESTAMPNTZ",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "COUNTRY_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "COUNTRY_ISO",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CONTINENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CONTINENT_ISO",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CITY_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SUBDIVISION_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "DEVICE_TYPE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "DEVICE_BRAND",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OS_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OS_VERSION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CLIENT_TYPE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CLIENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CLIENT_VERSION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_CAMPAIGN",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_MEDIUM",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_CONTENT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_SOURCE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REFERER_MEDIUM",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REFERER_URL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REFERER_URL_SCHEME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LAST_DATA_IP_ADDRESS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    } ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : true,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "windowSize" : 14400000,
+  "startExecutionFrom" : "2023-02-15T20:47:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-02-15T20:47:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "2292469b-df81-431e-afa4-19322a6d5843",
+    "title" : "Select Block",
+    "expression" : "// GENERATED @ 2023-02-15T11:16:39.068543374Z\nSELECT data.session_id:STRING AS session_id,\n    last(data.user_id:string) as user_id, \n    last(data.application) AS application,\n    last(FROM_UNIXTIME(data.created_at_local)) AS created_at_local,\n    last(FROM_UNIXTIME(data.inserted_at)) AS server_time,\n    last(GEO_IP('Country Name', data.geo.ip)) AS country_name,\n    last(GEO_IP('Country Iso Code', data.geo.ip)) AS country_iso,\n    last(GEO_IP('Continent Name', data.geo.ip)) AS continent_name,\n    last(GEO_IP('Continent Code', data.geo.ip)) AS continent_iso,\n    last(GEO_IP('City Name', data.geo.ip)) AS city_name,\n    last(GEO_IP('Subdivision 1 Name', data.geo.ip)) AS subdivision_name,\n    last(data.device.device.type) AS device_type,\n    last(data.device.device.brand) AS device_brand,\n    last(data.device.os.name) AS os_name,\n    last(data.device.os.version) AS os_version,\n    last(data.device.client.type) AS client_type,\n    last(data.device.client.name) AS client_name,\n    last(data.device.client.version) AS client_version,\n    LAST(data.utm_campaign) AS UTM_CAMPAIGN,\n    LAST(data.utm_medium) AS UTM_MEDIUM,\n    LAST(data.utm_content) AS UTM_CONTENT,\n    LAST(data.utm_source) AS UTM_SOURCE,\n    LAST(data.referer_medium) AS REFERER_MEDIUM,\n    LAST(data.referer_url) AS REFERER_URL,\n    LAST(data.referer_url_scheme) AS REFERER_URL_SCHEME,\n    LAST(data.ip_address) AS LAST_DATA_IP_ADDRESS\n \nFROM \"0-kinesis_events_classic\"\ngroup by 1\n\n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "IndexDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-02-20T11:04:53.412474260Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : true,
+  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "versionNumber" : 1
+}
