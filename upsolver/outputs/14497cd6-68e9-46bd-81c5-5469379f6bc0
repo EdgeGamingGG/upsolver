@@ -8,11 +8,11 @@
     "description" : "Duplicate of session enrichment",
     "creationTime" : "2023-02-20T10:29:26.339401514Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T11:04:41.659116852Z",
+    "modifiedTime" : "2023-02-20T11:04:53.694866865Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "4880a9be-e7ac-43a2-bfa3-8af0bc1834e2"
+    "versionId" : "5618b46d-262f-490f-aa24-7f9c75e432ad"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1420,19 +1420,7 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "SESSION_ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "USER_ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "APPLICATION",
+      "name" : "CLIENT_NAME",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1444,19 +1432,55 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "SERVER_TIME",
-      "info" : {
-        "typeName" : "TIMESTAMPNTZ",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "COUNTRY_NAME",
+      "name" : "USER_ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
-      "name" : "COUNTRY_ISO",
+      "name" : "DEVICE_BRAND",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REFERER_URL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_CONTENT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OS_VERSION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_MEDIUM",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REFERER_MEDIUM",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CONTINENT_ISO",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1468,7 +1492,13 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "CONTINENT_ISO",
+      "name" : "UTM_CAMPAIGN",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UTM_SOURCE",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1486,25 +1516,19 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "DEVICE_TYPE",
+      "name" : "LAST_DATA_IP_ADDRESS",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
-      "name" : "DEVICE_BRAND",
+      "name" : "APPLICATION",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
-      "name" : "OS_NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OS_VERSION",
+      "name" : "COUNTRY_ISO",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1516,7 +1540,25 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "CLIENT_NAME",
+      "name" : "REFERER_URL_SCHEME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "DEVICE_TYPE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "COUNTRY_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OS_NAME",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1528,51 +1570,9 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "UTM_CAMPAIGN",
+      "name" : "SERVER_TIME",
       "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "UTM_MEDIUM",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "UTM_CONTENT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "UTM_SOURCE",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "REFERER_MEDIUM",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "REFERER_URL",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "REFERER_URL_SCHEME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "LAST_DATA_IP_ADDRESS",
-      "info" : {
-        "typeName" : "VARCHAR",
+        "typeName" : "TIMESTAMPNTZ",
         "isIdentity" : false
       }
     } ],
@@ -1586,7 +1586,7 @@
   "startExecutionFrom" : "2023-02-15T20:47:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -1622,7 +1622,7 @@
   },
   "deployTime" : "2023-02-20T11:04:53.412474260Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
