@@ -8,11 +8,11 @@
     "description" : "Duplicate of snowflake - session enrichment ",
     "creationTime" : "2023-02-20T11:05:41.404833473Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T11:37:32.142010781Z",
+    "modifiedTime" : "2023-02-20T11:45:41.040383826Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "0479bd7e-1208-42e4-afcd-2ed0ecf9fd96"
+    "versionId" : "cacfe93e-c23c-412e-b290-0dd102ce7d86"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1625,13 +1625,13 @@
   "windowSize" : 14400000,
   "startExecutionFrom" : "2023-02-15T20:18:00Z",
   "allowCartesianProducts" : false,
-  "isDeleted" : false,
-  "isRunning" : true,
+  "isDeleted" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "physicalDelete" : {
     "initiated" : true,
-    "shouldRun" : true
+    "shouldRun" : false
   },
   "version" : 75,
   "allowRenaming" : true,
@@ -1666,7 +1666,7 @@
   },
   "deployTime" : "2023-02-20T11:06:23.332902672Z",
   "status" : {
-    "clazz" : "Deleting"
+    "clazz" : "Archived"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
