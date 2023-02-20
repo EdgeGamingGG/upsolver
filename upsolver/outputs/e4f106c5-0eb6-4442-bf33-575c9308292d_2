@@ -1,0 +1,856 @@
+{
+  "clazz" : "OutputTemplate",
+  "useNewEscaping" : false,
+  "supportMapSameKeyMultipleTimes" : false,
+  "id" : "e4f106c5-0eb6-4442-bf33-575c9308292d_2",
+  "displayData" : {
+    "name" : "users pipeline",
+    "description" : "Duplicate of users pipeline",
+    "creationTime" : "2023-02-20T11:09:13.127856834Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedTime" : "2023-02-20T11:24:10.980668872Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "2497e8a5-3e8a-4ff2-bf92-5b26f5f3ea4e"
+  },
+  "inputs" : [ "36733e00-10c6-4bcb-8e18-81b580c88eba" ],
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "groupBy" : false,
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "outputParameters" : {
+    "clazz" : "SnowflakeOutputParameters",
+    "mandatory" : {
+      "clazz" : "MandatorySnowflakeOutputParameters",
+      "jdbcConnection" : "86003443-faf8-43f0-a6da-cad3b8e16ad7",
+      "schema" : {
+        "catalog" : "DATALAKE",
+        "name" : "UPSOLVER"
+      },
+      "tableName" : "users_events",
+      "cloudStorageConnection" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0"
+    },
+    "outputFields" : [ {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "PROCESSING_TIME",
+        "index" : 0,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "time",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "ADMIN_PERMISSIONS",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.adminPermissions",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "AUTH_SOURCEID",
+        "index" : 2,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.authSourceId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "AUTH_SOURCE_USERID",
+        "index" : 3,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.authSourceUserId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "AVATAR_URL",
+        "index" : 4,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.avatarUrl",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "BAN",
+        "index" : 5,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "number",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.ban",
+          "nativeType" : {
+            "name" : "number",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "BETA_CODE",
+        "index" : 6,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.betaCode",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "CREATED_AT",
+        "index" : 7,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.createdAt",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EMAIL",
+        "index" : 8,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.email",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_ID",
+        "index" : 9,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "EVENT_NAME",
+        "index" : 10,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_name",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "ID",
+        "index" : 11,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "IS_CREATOR",
+        "index" : 12,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "boolean",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.isCreator",
+          "nativeType" : {
+            "name" : "boolean",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "LOCALE",
+        "index" : 13,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.locale",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "NICKNAME",
+        "index" : 14,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.nickname",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "SESSION_ID",
+        "index" : 15,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "STATUS",
+        "index" : 16,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.status",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "STEAMID",
+        "index" : 17,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.steamId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "UPDATED_AT",
+        "index" : 18,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.updatedAt",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "USERID",
+        "index" : 19,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.userId",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    } ],
+    "columnTypes" : { },
+    "softRetention" : false,
+    "alters" : {
+      "alters" : [ {
+        "clazz" : "AddColumn",
+        "column" : "ADMIN_PERMISSIONS",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "AUTH_SOURCEID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "AUTH_SOURCE_USERID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "AVATAR_URL",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "BAN",
+        "columnType" : {
+          "clazz" : "DbDouble"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "BETA_CODE",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "CREATED_AT",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EMAIL",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "EVENT_NAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "IS_CREATOR",
+        "columnType" : {
+          "clazz" : "DbBoolean"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "LOCALE",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "NICKNAME",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "SESSION_ID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "STATUS",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "STEAMID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "UPDATED_AT",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      }, {
+        "clazz" : "AddColumn",
+        "column" : "USERID",
+        "columnType" : {
+          "clazz" : "DbString"
+        },
+        "nullable" : true
+      } ]
+    },
+    "columns" : [ ],
+    "columnTypesInfo" : [ {
+      "name" : "PROCESSING_TIME",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "ADMIN_PERMISSIONS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "AUTH_SOURCEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "AUTH_SOURCE_USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "AVATAR_URL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BAN",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BETA_CODE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATED_AT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EMAIL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "IS_CREATOR",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LOCALE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NICKNAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STEAMID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UPDATED_AT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    } ],
+    "failOnWriteError" : false,
+    "createTable" : true,
+    "shouldFlatten" : false,
+    "resetQuotedIdentifiersIgnoreCase" : false
+  },
+  "outputInterval" : 1,
+  "startExecutionFrom" : "2023-02-15T20:45:00Z",
+  "allowCartesianProducts" : false,
+  "isDeleted" : false,
+  "isRunning" : true,
+  "deployedEver" : true,
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "e4f106c5-0eb6-4442-bf33-575c9308292d",
+    "rootId" : "e4f106c5-0eb6-4442-bf33-575c9308292d",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
+  "version" : 75,
+  "allowRenaming" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "outputSharding" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "earliestStartExecutionFrom" : "2023-02-15T20:24:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "blocks" : [ {
+    "id" : "fdffc5e5-7f3c-40f0-870e-73903c0782f2",
+    "title" : "Select Block",
+    "expression" : "\n// GENERATED @ 2023-02-20T11:20:47.811911891Z\nSELECT time AS PROCESSING_TIME,\n       data.adminPermissions AS ADMIN_PERMISSIONS,\n       data.authSourceId AS AUTH_SOURCEID,\n       data.authSourceUserId AS AUTH_SOURCE_USERID,\n       data.avatarUrl AS AVATAR_URL,\n       data.ban AS BAN,\n       data.betaCode AS BETA_CODE,\n       data.createdAt AS CREATED_AT,\n       data.email AS EMAIL,\n       data.event_id AS EVENT_ID,\n       data.event_name AS EVENT_NAME,\n       data.id AS ID,\n       data.isCreator AS IS_CREATOR,\n       data.locale AS LOCALE,\n       data.nickname AS NICKNAME,\n       data.session_id AS SESSION_ID,\n       data.status AS STATUS,\n       data.steamId AS STEAMID,\n       data.updatedAt AS UPDATED_AT,\n       data.userId AS USERID\n  FROM \"upsolver - users pipeline\"\n \n",
+    "dslWarnings" : [ ],
+    "isSelectBlock" : true
+  } ],
+  "groupByDeletion" : true,
+  "eventTypes" : [ ],
+  "inputInterval" : 1,
+  "restrictions" : [ ],
+  "duplicateHandlingInfo" : {
+    "handling" : {
+      "clazz" : "DefaultDuplicateHandling"
+    },
+    "isUserDefined" : false
+  },
+  "deployTime" : "2023-02-20T11:24:51.488374645Z",
+  "status" : {
+    "clazz" : "Running"
+  },
+  "shards" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "outputShards" : 1,
+  "hasAggregations" : false,
+  "allReferences" : [ "36733e00-10c6-4bcb-8e18-81b580c88eba" ],
+  "versionNumber" : 2
+}
