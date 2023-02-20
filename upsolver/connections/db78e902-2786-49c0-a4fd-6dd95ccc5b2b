@@ -5,24 +5,21 @@
     "clazz" : "SnowflakeConnection",
     "connectionString" : "jdbc:snowflake://vu78003.eu-west-1.snowflakecomputing.com/?db=DBT_DEV&warehouse=SMALL",
     "userName" : "UPSOLVER_USER",
-    "password" : "X6SJI8qpogxbGXGNUcYYSQ==",
+    "password" : "vvlQ19jazCguuRC4FVN1iYHUEw/b/p49E6ZkweeTBCg=",
     "displayData" : {
       "name" : "my_snowflake_connection",
       "description" : "",
-      "creationTime" : "2023-01-03T15:30:37.302226298Z",
-      "createdBy" : "Alon (alon.i@ludeo.com)",
-      "modifiedTime" : "2023-01-03T15:30:38.769626527Z",
-      "modifiedBy" : {
-        "value" : "Alon (alon.i@ludeo.com)"
-      },
-      "versionId" : "6b7eeb20-be77-4993-93e8-857e502cf6c1"
+      "creationTime" : "2023-02-20T11:01:20.169313728Z",
+      "createdBy" : " (bar.z@ludeo.com)",
+      "modifiedBy" : { },
+      "versionId" : "226a9cb2-990e-40ea-b887-8a29bc3c060d"
     },
     "schemas" : [ ],
     "displayValue" : "jdbc:snowflake://vu78003.eu-west-1.snowflakecomputing.com/?db=DBT_DEV&warehouse=SMALL"
   },
   "validation" : {
     "errors" : [ ],
-    "time" : "2023-02-01T11:45:00.006130527Z"
+    "time" : "2023-02-20T11:00:00.008502502Z"
   },
   "workspaces" : [ ],
   "extraOrganizationIds" : [ ],
