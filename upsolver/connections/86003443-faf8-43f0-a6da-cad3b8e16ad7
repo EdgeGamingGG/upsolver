@@ -1,0 +1,23 @@
+{
+  "id" : "86003443-faf8-43f0-a6da-cad3b8e16ad7",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "connection" : {
+    "clazz" : "SnowflakeConnection",
+    "connectionString" : "jdbc:snowflake://vu78003.eu-west-1.snowflakecomputing.com/?db=DATALAKE&warehouse=SMALL",
+    "userName" : "UPSOLVER_USER",
+    "password" : "tRMIksnBDgrdMluz4MqkJf/FrU1RzQ/yOdkBmf2zxBM=",
+    "displayData" : {
+      "name" : "snowflake connection",
+      "description" : "",
+      "creationTime" : "2023-02-20T11:01:08.673989249Z",
+      "createdBy" : " (bar.z@ludeo.com)",
+      "modifiedBy" : { },
+      "versionId" : "e1e981af-7352-47a2-b1f4-13171fe66045"
+    },
+    "schemas" : [ ],
+    "displayValue" : "jdbc:snowflake://vu78003.eu-west-1.snowflakecomputing.com/?db=DATALAKE&warehouse=SMALL"
+  },
+  "workspaces" : [ ],
+  "extraOrganizationIds" : [ ],
+  "isManaged" : false
+}
