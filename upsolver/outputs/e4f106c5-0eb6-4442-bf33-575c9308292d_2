@@ -8,11 +8,11 @@
     "description" : "Duplicate of users pipeline",
     "creationTime" : "2023-02-20T11:09:13.127856834Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T11:24:10.980668872Z",
+    "modifiedTime" : "2023-02-20T11:24:51.771205677Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "2497e8a5-3e8a-4ff2-bf92-5b26f5f3ea4e"
+    "versionId" : "1c21429d-25ea-412c-9e3b-d1376cfd9afc"
   },
   "inputs" : [ "36733e00-10c6-4bcb-8e18-81b580c88eba" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -671,55 +671,13 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "PROCESSING_TIME",
+      "name" : "IS_CREATOR",
       "info" : {
-        "typeName" : "DOUBLE",
+        "typeName" : "BOOLEAN",
         "isIdentity" : false
       }
     }, {
-      "name" : "ADMIN_PERMISSIONS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "AUTH_SOURCEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "AUTH_SOURCE_USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "AVATAR_URL",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "BAN",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "BETA_CODE",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CREATED_AT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EMAIL",
+      "name" : "ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -731,37 +689,25 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "EVENT_NAME",
+      "name" : "AVATAR_URL",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
-      "name" : "ID",
+      "name" : "AUTH_SOURCE_USERID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
-      "name" : "IS_CREATOR",
+      "name" : "CREATED_AT",
       "info" : {
-        "typeName" : "BOOLEAN",
+        "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
       "name" : "LOCALE",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NICKNAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "SESSION_ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -773,9 +719,39 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "STEAMID",
+      "name" : "USERID",
       "info" : {
         "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EMAIL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BETA_CODE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NICKNAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BAN",
+      "info" : {
+        "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     }, {
@@ -785,9 +761,33 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "USERID",
+      "name" : "ADMIN_PERMISSIONS",
       "info" : {
         "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STEAMID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "AUTH_SOURCEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PROCESSING_TIME",
+      "info" : {
+        "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     } ],
@@ -800,7 +800,7 @@
   "startExecutionFrom" : "2023-02-15T20:45:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
@@ -842,7 +842,7 @@
   },
   "deployTime" : "2023-02-20T11:24:51.488374645Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
