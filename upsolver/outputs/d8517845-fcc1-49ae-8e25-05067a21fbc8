@@ -8,11 +8,11 @@
     "description" : "Duplicate of session enrichment",
     "creationTime" : "2023-02-20T12:17:53.506561262Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T12:19:30.888572970Z",
+    "modifiedTime" : "2023-02-20T12:19:46.204793369Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "139d40fc-9f5d-4898-935c-7a8b9639d1df"
+    "versionId" : "3f7e992c-a48e-4264-84c0-8b7bcd45f8b4"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -838,7 +838,7 @@
   "startExecutionFrom" : "2023-02-15T21:55:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -874,7 +874,7 @@
   },
   "deployTime" : "2023-02-20T12:19:45.919220987Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
