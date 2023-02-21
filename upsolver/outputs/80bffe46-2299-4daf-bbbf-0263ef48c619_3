@@ -8,11 +8,11 @@
     "description" : "Duplicate of ludeos pipeline",
     "creationTime" : "2023-02-20T11:07:48.295745682Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-21T07:59:17.515923787Z",
+    "modifiedTime" : "2023-02-21T08:00:34.990135318Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "05c15660-ce46-4f63-9d1a-500141a48cb1"
+    "versionId" : "f538b4d7-a593-4a72-824d-e97bef09e5c0"
   },
   "inputs" : [ "f498f746-9e94-4ebf-b1a9-7a09bb84b77a" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1538,265 +1538,7 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "PROCESSING_TIME",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CHALLENGEABLE",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CREATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "DESCRIPTION",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EVENT_ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EVENT_NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "GAMEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "GOALCONTEXTID",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
       "name" : "ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "IDLEGACY",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "ISCSGO",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "LUDEOID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.CHALLENGEABLE",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.CREATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.DESCRIPTION",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.GAMEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.IDLEGACY",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.ISCSGO",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.PLAYSESSIONID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.PUBLISHSTATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.STATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.THUMB",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.UPDATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NEW.USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.CHALLENGEABLE",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.CREATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.DESCRIPTION",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.GAMEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.IDLEGACY",
-      "info" : {
-        "typeName" : "DOUBLE",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.ISCSGO",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.PLAYSESSIONID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.PUBLISHSTATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.STATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.THUMB",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.UPDATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "OLD.USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSION.GAMEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSION.GAMENAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSION.ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1808,43 +1550,19 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "PLAYSESSION.UPDATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSION.USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSIONID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PUBLISHSTATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "REQUESTID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
       "name" : "SCORECONTEXTIDS[]",
       "info" : {
         "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     }, {
-      "name" : "SESSIONID",
+      "name" : "PLAYSESSION.GAMEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1856,25 +1574,97 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "STATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "THUMB",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "THUMBINDEX",
+      "name" : "NEW.IDLEGACY",
       "info" : {
         "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     }, {
-      "name" : "UPDATEDAT",
+      "name" : "OLD.UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.GAMEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.ISCSGO",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "DESCRIPTION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.PLAYSESSIONID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.PUBLISHSTATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "GOALCONTEXTID",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.PUBLISHSTATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.THUMB",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.ISCSGO",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSIONID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STATUS",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1886,7 +1676,49 @@
         "isIdentity" : false
       }
     }, {
+      "name" : "NEW.THUMB",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.STATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSIONID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.CHALLENGEABLE",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSION.GAMENAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
       "name" : "USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.GAMEID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -1895,6 +1727,174 @@
       "name" : "USERNICKNAME",
       "info" : {
         "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.CHALLENGEABLE",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.DESCRIPTION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.DESCRIPTION",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "GAMEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "ISCSGO",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.CREATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.STATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.PLAYSESSIONID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.CREATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "THUMBINDEX",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "THUMB",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSION.UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CHALLENGEABLE",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LUDEOID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSION.USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "OLD.IDLEGACY",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSION.ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "REQUESTID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "IDLEGACY",
+      "info" : {
+        "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PUBLISHSTATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NEW.ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PROCESSING_TIME",
+      "info" : {
+        "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     } ],
@@ -1907,7 +1907,7 @@
   "startExecutionFrom" : "2023-02-15T21:01:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
@@ -1949,7 +1949,7 @@
   },
   "deployTime" : "2023-02-21T08:00:34.696463210Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
