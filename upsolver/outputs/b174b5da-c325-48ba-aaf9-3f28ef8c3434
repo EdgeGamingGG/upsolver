@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-02-21T08:45:32.956950115Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-21T09:18:23.949697704Z",
+    "modifiedTime" : "2023-02-21T09:18:33.931050448Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "8b88a023-9746-4637-a504-cd2fa55d6370"
+    "versionId" : "27448ca6-286e-45ea-9af7-33cf097c8bc6"
   },
   "inputs" : [ "f498f746-9e94-4ebf-b1a9-7a09bb84b77a" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -358,25 +358,7 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "LUDEOID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CREATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "UPDATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "USERID",
+      "name" : "DESCRIPTION",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -388,7 +370,7 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "GAMEID",
+      "name" : "STATUS",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -400,19 +382,37 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "STATUS",
+      "name" : "USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "GAMEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LUDEOID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     }, {
       "name" : "PUBLISHSTATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "DESCRIPTION",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -427,7 +427,7 @@
   "startExecutionFrom" : "2023-02-15T21:01:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -448,7 +448,7 @@
   "restrictions" : [ ],
   "deployTime" : "2023-02-21T09:18:33.651414548Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
