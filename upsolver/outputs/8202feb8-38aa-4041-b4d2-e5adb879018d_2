@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "8202feb8-38aa-4041-b4d2-e5adb879018d",
+  "id" : "8202feb8-38aa-4041-b4d2-e5adb879018d_2",
   "displayData" : {
     "name" : "mixpanel - user property update",
     "description" : "",
     "creationTime" : "2023-02-21T13:28:52.576284378Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-21T14:35:58.840427817Z",
+    "modifiedTime" : "2023-02-21T14:51:08.898989683Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "eaa1ef3a-9a53-427a-b651-4b0689e9f4a7"
+    "versionId" : "af728a59-3630-446e-a5ab-8900f7219f39"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -726,7 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-02-21T14:35:58.439897484Z",
+          "minTime" : "2023-02-21T14:51:21.863895964Z",
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
@@ -763,7 +763,7 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
-        "name" : "event_name",
+        "name" : "event",
         "index" : 1,
         "warnings" : [ ]
       } ],
@@ -1251,13 +1251,18 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-21T14:35:00Z",
-  "endExecutionAt" : "2023-02-21T14:56:00Z",
+  "startExecutionFrom" : "2023-02-21T14:56:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
+  "link" : {
+    "parentId" : "8202feb8-38aa-4041-b4d2-e5adb879018d",
+    "rootId" : "8202feb8-38aa-4041-b4d2-e5adb879018d",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -1267,12 +1272,15 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-21T14:35:00Z",
+  "executionState" : {
+    "clazz" : "ExecutionState$Running"
+  },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "7366b601-2ebd-4ad5-8f23-622d4664c578",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       \"set_once\":string as event_name,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"0-kinesis_events_classic\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
+    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       \"set_once\":string as event,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"0-kinesis_events_classic\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -1286,7 +1294,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-21T14:35:58.559327864Z",
+  "deployTime" : "2023-02-21T14:51:21.981660147Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1298,5 +1306,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 1
+  "versionNumber" : 2
 }
