@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
+  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_3",
   "displayData" : {
     "name" : "mixpanel - user property update",
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T09:58:23.175311504Z",
+    "modifiedTime" : "2023-02-22T11:29:51.632539503Z",
     "modifiedBy" : {
-      "value" : " (bar.z@ludeo.com)"
+      "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "c599b090-cf76-4b5b-9c60-598cbe369c7d"
+    "versionId" : "5072af35-0797-48ce-802d-b43471730f15"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -726,7 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-02-22T09:22:15.181615344Z",
+          "minTime" : "2023-02-22T11:30:53.842573901Z",
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
@@ -1336,13 +1336,18 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-22T08:40:00Z",
-  "endExecutionAt" : "2023-02-15T14:48:00Z",
+  "startExecutionFrom" : "2023-02-22T08:00:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
+  "link" : {
+    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_2",
+    "rootId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
+    "currentVersion" : 3,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -1351,10 +1356,9 @@
   "outputSharding" : {
     "clazz" : "NoOperationParallelism"
   },
-  "earliestStartExecutionFrom" : "2023-02-22T08:40:00Z",
-  "isCompleted" : false,
+  "earliestStartExecutionFrom" : "2023-02-15T14:48:00Z",
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
@@ -1375,7 +1379,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-22T09:22:15.300130452Z",
+  "deployTime" : "2023-02-22T11:30:53.951323436Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1387,5 +1391,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 1
+  "versionNumber" : 3
 }
