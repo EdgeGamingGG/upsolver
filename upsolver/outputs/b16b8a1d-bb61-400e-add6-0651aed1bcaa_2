@@ -12,7 +12,7 @@
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "0a9ef9c4-bcc9-4f9c-a21f-9fd1ff1cd501"
+    "versionId" : "46971e28-c4d2-4af4-a352-8f7aebcea9a0"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1337,7 +1337,7 @@
   },
   "outputInterval" : 1,
   "startExecutionFrom" : "2023-02-15T14:48:00Z",
-  "endExecutionAt" : "2023-02-22T08:00:00Z",
+  "endExecutionAt" : "2023-02-20T19:21:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
