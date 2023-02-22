@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_8",
+  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_9",
   "displayData" : {
     "name" : "mixpanel - user property update",
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T13:43:26.282693508Z",
+    "modifiedTime" : "2023-02-22T13:55:16.017649069Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "51359455-c21a-486a-8eda-4f7d052354d8"
+    "versionId" : "c5baf719-7d41-4ab3-ab05-97837207a762"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -726,7 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-02-22T13:43:25.867497973Z",
+          "minTime" : "2023-02-22T13:56:13.457300993Z",
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
@@ -1262,17 +1262,16 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-22T13:37:00Z",
-  "endExecutionAt" : "2023-02-22T13:45:00Z",
+  "startExecutionFrom" : "2023-02-22T13:45:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "link" : {
-    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_7",
+    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_8",
     "rootId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
-    "currentVersion" : 8,
+    "currentVersion" : 9,
     "isCorrection" : false
   },
   "version" : 75,
@@ -1306,7 +1305,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-22T13:43:25.977699847Z",
+  "deployTime" : "2023-02-22T13:56:13.569253233Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1318,5 +1317,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 8
+  "versionNumber" : 9
 }
