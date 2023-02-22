@@ -8,11 +8,11 @@
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T13:58:47.972346549Z",
+    "modifiedTime" : "2023-02-22T14:55:25.260610397Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "aacccee2-e99c-4300-a41a-82d22bc4eeae"
+    "versionId" : "9c5d1879-d579-497d-9fc7-2f90976d0574"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
