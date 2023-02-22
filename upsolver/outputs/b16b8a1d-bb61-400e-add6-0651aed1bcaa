@@ -8,11 +8,11 @@
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T09:23:03.610731632Z",
+    "modifiedTime" : "2023-02-22T09:58:23.175311504Z",
     "modifiedBy" : {
-      "value" : " (stas.grinberg@ludeo.com)"
+      "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "6e16fe28-8357-421b-ab9d-5b834e15e5e1"
+    "versionId" : "93c3e1ca-7793-4e46-aade-0d8ff908c102"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1352,8 +1352,9 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-22T08:40:00Z",
+  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Running"
+    "clazz" : "ExecutionState$Deleting"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
