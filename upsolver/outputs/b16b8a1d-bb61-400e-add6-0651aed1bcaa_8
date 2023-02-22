@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_2",
+  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_8",
   "displayData" : {
     "name" : "mixpanel - user property update",
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T13:38:53.589254636Z",
+    "modifiedTime" : "2023-02-22T13:43:01.653540628Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "2ba59b0e-c03f-4681-a5ba-5f30de6ecd61"
+    "versionId" : "c3d05c10-ee65-48e8-98ed-6a98a4726b26"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -726,7 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-02-22T09:58:22.780711312Z",
+          "minTime" : "2023-02-22T13:43:25.867497973Z",
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
@@ -740,12 +740,7 @@
       "outputs" : [ {
         "name" : "processing_time",
         "index" : 0,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "processing_time",
-          "index" : 0,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "FieldFeatureInput",
@@ -766,46 +761,47 @@
         "isFromInline" : false
       }
     }, {
-      "clazz" : "RawOutput",
+      "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "event",
         "index" : 1,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "event",
-          "index" : 1,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
+      "featureDefinition" : {
+        "clazz" : "FeatureDefinition",
+        "dsl" : "'set_once'",
         "field" : {
-          "name" : "set_once",
+          "name" : "event",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
             "subFields" : [ ]
           }
         },
-        "isAggregationField" : false,
-        "isFromInline" : false
+        "featureInputs" : [ {
+          "clazz" : "LiteralFeatureInput",
+          "literal" : "set_once",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        } ],
+        "feature" : {
+          "clazz" : "AnyFeatures$IdentityFeature"
+        },
+        "inline" : true,
+        "id" : "680317b9-c038-4f80-911f-aa469d6d254e",
+        "infix" : false,
+        "blockId" : "7366b601-2ebd-4ad5-8f23-622d4664c578",
+        "pathForRead" : { }
       }
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "user_id",
         "index" : 2,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "user_id",
-          "index" : 2,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "FieldFeatureInput",
@@ -830,12 +826,7 @@
       "outputs" : [ {
         "name" : "$distinct_id",
         "index" : 3,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "$distinct_id",
-          "index" : 3,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -861,12 +852,7 @@
       "outputs" : [ {
         "name" : "utm_source",
         "index" : 4,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "utm_source",
-          "index" : 4,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -892,12 +878,7 @@
       "outputs" : [ {
         "name" : "utm_medium",
         "index" : 5,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "utm_medium",
-          "index" : 5,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -923,12 +904,7 @@
       "outputs" : [ {
         "name" : "utm_campaign",
         "index" : 6,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "utm_campaign",
-          "index" : 6,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -954,12 +930,7 @@
       "outputs" : [ {
         "name" : "utm_content",
         "index" : 7,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "utm_content",
-          "index" : 7,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -985,12 +956,7 @@
       "outputs" : [ {
         "name" : "referer_url",
         "index" : 8,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "referer_url",
-          "index" : 8,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1016,12 +982,7 @@
       "outputs" : [ {
         "name" : "referer_medium",
         "index" : 9,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "referer_medium",
-          "index" : 9,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1047,12 +1008,7 @@
       "outputs" : [ {
         "name" : "country_name",
         "index" : 10,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "country_name",
-          "index" : 10,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1078,12 +1034,7 @@
       "outputs" : [ {
         "name" : "continent_name",
         "index" : 11,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "continent_name",
-          "index" : 11,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1109,12 +1060,7 @@
       "outputs" : [ {
         "name" : "city_name",
         "index" : 12,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "city_name",
-          "index" : 12,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1140,12 +1086,7 @@
       "outputs" : [ {
         "name" : "subdivision_name",
         "index" : 13,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "subdivision_name",
-          "index" : 13,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "PointerFeatureInput",
@@ -1171,12 +1112,7 @@
       "outputs" : [ {
         "name" : "username",
         "index" : 14,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "username",
-          "index" : 14,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "FieldFeatureInput",
@@ -1201,12 +1137,7 @@
       "outputs" : [ {
         "name" : "access_code",
         "index" : 15,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "access_code",
-          "index" : 15,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "FieldFeatureInput",
@@ -1231,12 +1162,7 @@
       "outputs" : [ {
         "name" : "email",
         "index" : 16,
-        "warnings" : [ ],
-        "originalOutput" : {
-          "name" : "email",
-          "index" : 16,
-          "warnings" : [ ]
-        }
+        "warnings" : [ ]
       } ],
       "field" : {
         "clazz" : "FieldFeatureInput",
@@ -1336,17 +1262,16 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-15T14:48:00Z",
-  "endExecutionAt" : "2023-02-20T19:21:00Z",
+  "startExecutionFrom" : "2023-02-22T13:37:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "link" : {
-    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
+    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_7",
     "rootId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
-    "currentVersion" : 2,
+    "currentVersion" : 8,
     "isCorrection" : false
   },
   "version" : 75,
@@ -1358,16 +1283,15 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-15T14:48:00Z",
-  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "7366b601-2ebd-4ad5-8f23-622d4664c578",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       \"set_once\":string as event,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"0-kinesis_events_classic\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
+    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       'set_once' as event,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"0-kinesis_events_classic\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -1381,7 +1305,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-22T09:58:22.889097846Z",
+  "deployTime" : "2023-02-22T13:43:25.977699847Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1393,5 +1317,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 2
+  "versionNumber" : 8
 }
