@@ -8,11 +8,11 @@
     "description" : "Duplicate of session enrichment 2",
     "creationTime" : "2023-02-21T11:40:55.587243586Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-21T11:43:18.908697528Z",
+    "modifiedTime" : "2023-02-21T12:41:34.442382246Z",
     "modifiedBy" : {
-      "value" : " (stas.grinberg@ludeo.com)"
+      "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "d258eb3e-2927-44e2-a280-5f7fe93b1d79"
+    "versionId" : "775777a3-5084-42aa-9f49-dfa5da4e3053"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1057,7 +1057,10 @@
       "clazz" : "MandatoryIndexOutputParameters",
       "queryEnvironment" : [ "4c32da33-6716-4dae-bb4f-46250bfbe35c" ],
       "storage" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
-      "retention" : 4320,
+      "retention" : 2880,
+      "retentionParameters" : {
+        "retainedStartTime" : "2023-02-21T10:39:09.080781082Z"
+      },
       "createInfiniteWindow" : false
     },
     "window" : 2880,
