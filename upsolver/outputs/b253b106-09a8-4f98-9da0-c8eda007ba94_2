@@ -8,11 +8,11 @@
     "description" : "Duplicate of snowflake - ludeos pipeline",
     "creationTime" : "2023-02-21T14:18:42.931037846Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-21T14:23:37.865356284Z",
+    "modifiedTime" : "2023-02-21T14:24:07.377454543Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "c688d638-d418-4b0c-82df-a3f31fa08e4e"
+    "versionId" : "36f538b0-feea-4c2d-89b7-ed111391b520"
   },
   "inputs" : [ "f498f746-9e94-4ebf-b1a9-7a09bb84b77a" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -370,55 +370,7 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "LUDEOID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CREATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "UPDATEDAT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "GAMEID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PLAYSESSION.GAMENAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "STATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "PUBLISHSTATUS",
+      "name" : "ID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -430,7 +382,55 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "ID",
+      "name" : "NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PLAYSESSION.GAMENAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UPDATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "GAMEID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATEDAT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LUDEOID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "PUBLISHSTATUS",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -443,6 +443,7 @@
   },
   "outputInterval" : 60,
   "startExecutionFrom" : "2023-02-15T21:01:00Z",
+  "endExecutionAt" : "2023-02-15T21:01:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
