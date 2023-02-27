@@ -1,0 +1,70 @@
+{
+  "clazz" : "KafkaInput",
+  "id" : "e6f05f9d-fe73-482b-b144-06ae3625a3d4",
+  "globalId" : "e6f05f9d-fe73-482b-b144-06ae3625a3d4",
+  "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
+  "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
+  "displayData" : {
+    "name" : "staging.collector-service.client-events",
+    "description" : "",
+    "creationTime" : "2023-02-27T13:01:31.083934403Z",
+    "createdBy" : " (bar.z@ludeo.com)",
+    "modifiedBy" : { },
+    "versionId" : "548e2a8b-1b2e-4a03-9de9-f31476307871"
+  },
+  "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "previousLocations" : {
+    "locations" : [ ]
+  },
+  "contentType" : {
+    "clazz" : "JsonContentType",
+    "nestedJsonPaths" : [ ],
+    "nestedJsons" : [ ],
+    "splitRootArray" : true,
+    "keepOriginalNestedJsonString" : false,
+    "storeJsonAsString" : false
+  },
+  "kafkaHosts" : "msk-broker-platform-2.stg.ludeo.com:9092,msk-broker-platform-1.stg.ludeo.com:9092",
+  "topicName" : "staging.collector-service.client-events",
+  "startExecutionFrom" : "2023-02-23T12:51:00Z",
+  "isOnline" : false,
+  "kafkaVersion" : "0.10.x.x",
+  "readFromStart" : true,
+  "useSsl" : false,
+  "isDeleted" : false,
+  "softRetention" : false,
+  "version" : 75,
+  "needsElasticIP" : true,
+  "operationParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "newShardParallelism" : {
+    "clazz" : "NoOperationParallelism"
+  },
+  "onlineProcessingParallelism" : 1,
+  "storeRawData" : false,
+  "compression" : {
+    "clazz" : "NoneCompression",
+    "noCompression" : [ ],
+    "displayName" : "None"
+  },
+  "workspaces" : [ ],
+  "reportingTags" : "",
+  "previewId" : "c4c8a29b975677f16183d8bde5a1aa15",
+  "addBatcherTag" : false,
+  "additionalTopicNames" : [ ],
+  "isRunning" : true,
+  "deleteMetadataFilesCreatedByBatcher" : false,
+  "allowPartitionResets" : false,
+  "isUnsynchronized" : false,
+  "shards" : 1,
+  "parallelismType" : {
+    "clazz" : "ManualParallelismType",
+    "executionParallelism" : 1,
+    "displayValue" : "Manual - Shards"
+  },
+  "status" : {
+    "clazz" : "Running"
+  },
+  "safeStartTime" : "2023-02-23T12:51:00Z"
+}
