@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-02-07T09:48:48.379487561Z",
     "createdBy" : "Alon (alon.i@ludeo.com)",
-    "modifiedTime" : "2023-03-01T08:46:22.151623163Z",
+    "modifiedTime" : "2023-03-01T08:46:54.579518893Z",
     "modifiedBy" : {
       "value" : "Alon (alon.i@ludeo.com)"
     },
-    "versionId" : "aaee7f26-d0c5-4eb9-aa21-93b061c2480c"
+    "versionId" : "cb517089-4655-4283-bd8a-56f2f072274c"
   },
   "inputs" : [ "37a3d2c3-0a7c-48d9-aef0-e5c3e60c83d3" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -203,13 +203,13 @@
   "outputInterval" : 1,
   "startExecutionFrom" : "2023-02-07T09:46:00Z",
   "allowCartesianProducts" : false,
-  "isDeleted" : false,
-  "isRunning" : true,
+  "isDeleted" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "physicalDelete" : {
     "initiated" : true,
-    "shouldRun" : true
+    "shouldRun" : false
   },
   "version" : 75,
   "allowRenaming" : true,
@@ -229,7 +229,7 @@
   "restrictions" : [ ],
   "deployTime" : "2023-02-07T09:58:09.379165251Z",
   "status" : {
-    "clazz" : "Deleting"
+    "clazz" : "Archived"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
