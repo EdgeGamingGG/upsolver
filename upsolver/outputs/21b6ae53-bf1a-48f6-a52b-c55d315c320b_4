@@ -2,19 +2,19 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "21b6ae53-bf1a-48f6-a52b-c55d315c320b_3",
+  "id" : "21b6ae53-bf1a-48f6-a52b-c55d315c320b_4",
   "displayData" : {
     "name" : "mixpanel - client events",
     "description" : "",
     "creationTime" : "2023-02-15T21:18:12.712034159Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-21T14:37:54.000506038Z",
+    "modifiedTime" : "2023-03-05T12:36:48.341038359Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "2e387d91-263a-455e-856c-c994f71b03d1"
+    "versionId" : "6036a809-b036-4956-87da-c3d6fe10cdc2"
   },
-  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
   "groupBy" : false,
   "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
@@ -109,7 +109,7 @@
         "inline" : true,
         "id" : "6dbf6e85-48cd-4e8b-b935-577873fdaa83",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -304,7 +304,7 @@
         "inline" : true,
         "id" : "cd1fdce6-fb16-4112-8680-c4f60d9fe383",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -349,7 +349,7 @@
         "inline" : true,
         "id" : "39813bb4-2b6f-4ce9-85cc-5f7c4d18ec7f",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -395,7 +395,7 @@
         "inline" : true,
         "id" : "1379aaae-f3bd-4b7d-8a03-30e4691a4cda",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -441,7 +441,7 @@
         "inline" : true,
         "id" : "dddc5246-9229-4bf7-84dc-ea101cee5665",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -487,7 +487,7 @@
         "inline" : true,
         "id" : "0ca19fb0-035c-4bbb-b9bc-c1dd57b89570",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -533,7 +533,7 @@
         "inline" : true,
         "id" : "56a9b80b-0e80-4ef1-8d2e-cda9d07b6b5e",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -579,7 +579,7 @@
         "inline" : true,
         "id" : "d730ef80-a72a-4ad4-9a09-2d55de1e5df0",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -625,7 +625,7 @@
         "inline" : true,
         "id" : "c2a893f8-77a6-45c0-871d-75a59d0eb66f",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     }, {
@@ -845,61 +845,7 @@
         "inline" : true,
         "id" : "a764bc8d-c6e5-436b-992d-83a29084b7db",
         "infix" : false,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
-        "pathForRead" : { }
-      }
-    }, {
-      "clazz" : "RawCalculatedFieldOutput",
-      "outputs" : [ ],
-      "featureDefinition" : {
-        "clazz" : "FeatureDefinition",
-        "dsl" : "data.source:string = 'client'",
-        "field" : {
-          "name" : "__WHERE_filter_0__",
-          "nativeType" : {
-            "name" : "boolean",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "featureInputs" : [ {
-          "clazz" : "FieldFeatureInput",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          },
-          "field" : {
-            "name" : "data.source",
-            "nativeType" : {
-              "name" : "string",
-              "isArray" : false,
-              "subFields" : [ ]
-            }
-          },
-          "isAggregationField" : false,
-          "isFromInline" : false
-        }, {
-          "clazz" : "LiteralFeatureInput",
-          "literal" : "client",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        } ],
-        "feature" : {
-          "clazz" : "AnyFeatures$EqualToFilterV2"
-        },
-        "filterParameters" : {
-          "enabled" : true,
-          "inverted" : false,
-          "filterSort" : 0
-        },
-        "inline" : true,
-        "id" : "4d51a3d6-cad2-4076-9492-a7f0fb927bb7",
-        "infix" : true,
-        "blockId" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+        "blockId" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
         "pathForRead" : { }
       }
     } ],
@@ -928,17 +874,16 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-16T20:56:00Z",
-  "endExecutionAt" : "2023-03-05T12:42:00Z",
+  "startExecutionFrom" : "2023-03-05T12:42:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "link" : {
-    "parentId" : "21b6ae53-bf1a-48f6-a52b-c55d315c320b_2",
+    "parentId" : "21b6ae53-bf1a-48f6-a52b-c55d315c320b_3",
     "rootId" : "21b6ae53-bf1a-48f6-a52b-c55d315c320b",
-    "currentVersion" : 3,
+    "currentVersion" : 4,
     "isCorrection" : false
   },
   "version" : 75,
@@ -956,9 +901,9 @@
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
-    "id" : "abe475b0-26c1-4004-9667-ce663c7af98c",
+    "id" : "8b85ce57-1d38-4d65-b5c7-cf32b4915f96",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-16T19:55:17.699303920Z\nSELECT data.created_at AS created_at,\n       COALESCE(data.user_id, data.uid) AS distinct_id,\n       data.uid AS \"$anon_distinct_id\",\n       data.event_id AS \"$insert_id\",\n       data.event_name AS event,\n       data.user_id AS user_id,\n       data.source AS source,\n       data.application AS application,\n       FROM_UNIXTIME(data.created_at_local) AS created_at_local,\n       FROM_UNIXTIME(data.inserted_at) AS server_time,\n       GEO_IP('Country Name', data.geo.ip) AS country_name,\n       GEO_IP('Country Iso Code', data.geo.ip) AS country_iso,\n       GEO_IP('Continent Name', data.geo.ip) AS continent_name,\n       GEO_IP('Continent Code', data.geo.ip) AS continent_iso,\n       GEO_IP('City Name', data.geo.ip) AS city_name,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS subdivision_name,\n       data.device.device.type AS device_type,\n       data.device.device.brand AS device_brand,\n       data.device.os.name AS os_name,\n       data.device.os.version AS os_version,\n       data.device.client.type AS client_type,\n       data.device.client.name AS client_name,\n       data.device.client.version AS client_version,\n       RECORD_TO_JSON(data.properties.url) AS properties\n  FROM \"0-kinesis_events_classic\" \n WHERE (data.source = 'client') \n",
+    "expression" : "// GENERATED @ 2023-03-05T12:36:30.036911702Z\nSELECT data.created_at AS created_at,\n       COALESCE(data.user_id, data.uid) AS distinct_id,\n       data.uid AS \"$anon_distinct_id\",\n       data.event_id AS \"$insert_id\",\n       data.event_name AS event,\n       data.user_id AS user_id,\n       data.source AS source,\n       data.application AS application,\n       FROM_UNIXTIME(data.created_at_local) AS created_at_local,\n       FROM_UNIXTIME(data.inserted_at) AS server_time,\n       GEO_IP('Country Name', data.geo.ip) AS country_name,\n       GEO_IP('Country Iso Code', data.geo.ip) AS country_iso,\n       GEO_IP('Continent Name', data.geo.ip) AS continent_name,\n       GEO_IP('Continent Code', data.geo.ip) AS continent_iso,\n       GEO_IP('City Name', data.geo.ip) AS city_name,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS subdivision_name,\n       data.device.device.type AS device_type,\n       data.device.device.brand AS device_brand,\n       data.device.os.name AS os_name,\n       data.device.os.version AS os_version,\n       data.device.client.type AS client_type,\n       data.device.client.name AS client_name,\n       data.device.client.version AS client_version,\n       RECORD_TO_JSON(data.properties.url:string) AS properties\n  FROM \"staging.collector-service.client-events\"\n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -972,7 +917,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-16T20:51:38.195593475Z",
+  "deployTime" : "2023-03-05T12:37:00.957788814Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -983,6 +928,6 @@
   },
   "outputShards" : 1,
   "hasAggregations" : false,
-  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 3
+  "allReferences" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
+  "versionNumber" : 4
 }
