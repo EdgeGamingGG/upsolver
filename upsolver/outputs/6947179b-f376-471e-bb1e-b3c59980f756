@@ -8,11 +8,11 @@
     "description" : "Duplicate of events_pipeline",
     "creationTime" : "2023-03-05T11:48:18.295254127Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-03-05T11:49:00.204672870Z",
+    "modifiedTime" : "2023-03-05T11:49:17.379030337Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "7a9c30a6-0fa6-4b61-8837-8490ea8afe63"
+    "versionId" : "f96ac0d9-b152-4148-acc1-4031df587263"
   },
   "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -354,7 +354,7 @@
   "startExecutionFrom" : "2023-03-05T11:49:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "version" : 75,
@@ -390,7 +390,7 @@
   },
   "deployTime" : "2023-03-05T11:49:17.094395646Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
