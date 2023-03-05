@@ -2,19 +2,19 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_6",
+  "id" : "d9d1f434-f6a0-4442-9add-9aa62d066960_11",
   "displayData" : {
     "name" : "events_pipeline",
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T14:58:58.844701523Z",
+    "modifiedTime" : "2023-03-05T11:55:55.241377142Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "d01e12b2-4de9-4af1-b352-b4cf7f9f7574"
+    "versionId" : "cf382245-ed5b-42a3-b4d9-a72d8f55e1e1"
   },
-  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
   "groupBy" : false,
   "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
@@ -46,10 +46,35 @@
         "isFromInline" : false
       }
     }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "event_id",
+        "index" : 1,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.event_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
       "clazz" : "RawCalculatedFieldOutput",
       "outputs" : [ {
         "name" : "record",
-        "index" : 1,
+        "index" : 2,
         "warnings" : [ ]
       } ],
       "featureDefinition" : {
@@ -87,14 +112,13 @@
         "inline" : true,
         "id" : "f95a6be6-a20b-4720-a100-c85b251a2803",
         "infix" : false,
-        "blockId" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
         "pathForRead" : { }
       }
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "createdAt",
-        "index" : 2,
+        "index" : 3,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -119,7 +143,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "uid",
-        "index" : 3,
+        "index" : 4,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -143,8 +167,33 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
+        "name" : "session_id",
+        "index" : 5,
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.session_id",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
         "name" : "updatedAt",
-        "index" : 4,
+        "index" : 6,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -169,7 +218,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "id",
-        "index" : 5,
+        "index" : 7,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -193,33 +242,8 @@
     }, {
       "clazz" : "RawOutput",
       "outputs" : [ {
-        "name" : "userId",
-        "index" : 6,
-        "warnings" : [ ]
-      } ],
-      "field" : {
-        "clazz" : "FieldFeatureInput",
-        "nativeType" : {
-          "name" : "string",
-          "isArray" : false,
-          "subFields" : [ ]
-        },
-        "field" : {
-          "name" : "data.userId",
-          "nativeType" : {
-            "name" : "string",
-            "isArray" : false,
-            "subFields" : [ ]
-          }
-        },
-        "isAggregationField" : false,
-        "isFromInline" : false
-      }
-    }, {
-      "clazz" : "RawOutput",
-      "outputs" : [ {
         "name" : "user_id",
-        "index" : 7,
+        "index" : 8,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -244,7 +268,7 @@
       "clazz" : "RawOutput",
       "outputs" : [ {
         "name" : "event_name",
-        "index" : 8,
+        "index" : 9,
         "warnings" : [ ]
       } ],
       "field" : {
@@ -276,18 +300,17 @@
     "shouldFlatten" : false
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-03T11:48:00Z",
-  "endExecutionAt" : "2023-02-14T16:10:00Z",
+  "startExecutionFrom" : "2023-03-05T12:30:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_5",
+    "parentId" : "d9d1f434-f6a0-4442-9add-9aa62d066960_10",
     "rootId" : "d9d1f434-f6a0-4442-9add-9aa62d066960",
-    "currentVersion" : 6,
-    "isCorrection" : true
+    "currentVersion" : 11,
+    "isCorrection" : false
   },
   "version" : 75,
   "allowRenaming" : true,
@@ -298,19 +321,12 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-01T01:59:00Z",
-  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Completed"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
-  "blocks" : [ {
-    "id" : "d63c0b7a-1d87-4b18-81ea-64fdac6a7a1f",
-    "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-07T10:07:41.482100190Z\nSELECT time AS processing_time,\nRECORD_TO_JSON(data.id) AS record,\ndata.createdAt AS createdAt:STRING,\ndata.uid AS uid:STRING,\ndata.updatedAt AS updatedAt:STRING,data.id AS id:STRING,data.userId AS userId:STRING,data.user_id AS user_id:STRING,data.event_name AS event_name:STRING\n  FROM \"0-kinesis_events_classic\"  \n      --where\n      --data.event_name in ('ludeos.draft-ludeo-created','ludeos.deleted','ludeos.updated','ludeos.created','ludeos.failed-to-create','ludeos.failed-to-attach-media','ludeos.successfully-attached-media','users.created','users.complete-registration','users.updated','users.loggedIn','users.loggedOut','users.deleted','users.banned','users.unbanned','users.feedback-created','users.create-play-session-request','steam_login-clicked')\n",
-    "dslWarnings" : [ ],
-    "isSelectBlock" : true
-  } ],
+  "blocks" : [ ],
   "groupByDeletion" : true,
   "eventTypes" : [ ],
   "inputInterval" : 1,
@@ -321,9 +337,9 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-15T11:13:10.732790958Z",
+  "deployTime" : "2023-03-05T12:25:37.784829093Z",
   "status" : {
-    "clazz" : "Correction"
+    "clazz" : "Running"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
@@ -332,6 +348,6 @@
   },
   "outputShards" : 1,
   "hasAggregations" : false,
-  "allReferences" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 6
+  "allReferences" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
+  "versionNumber" : 11
 }

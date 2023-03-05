@@ -8,11 +8,11 @@
     "description" : "",
     "creationTime" : "2023-02-07T10:07:39.336789197Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-19T14:57:52.808923731Z",
+    "modifiedTime" : "2023-02-19T14:58:58.847337613Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "a645c133-f887-4042-a2ea-15f01ef88344"
+    "versionId" : "8d0d7ddd-82e3-43ac-b63c-ffd480ca4190"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -302,6 +302,7 @@
   },
   "outputInterval" : 1,
   "startExecutionFrom" : "2023-02-19T14:40:00Z",
+  "endExecutionAt" : "2023-03-05T12:30:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
