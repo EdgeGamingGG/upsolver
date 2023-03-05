@@ -2,19 +2,19 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_10",
+  "id" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_13",
   "displayData" : {
     "name" : "mixpanel - user property update",
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-02-22T15:05:59.044178870Z",
+    "modifiedTime" : "2023-03-05T12:40:00.577116336Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "4dfefe91-c00a-4a4b-b7a3-445341f8a447"
+    "versionId" : "a99f3874-29ff-4967-ace6-841ebc071d80"
   },
-  "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
+  "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
   "groupBy" : false,
   "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
@@ -726,7 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-02-22T13:58:47.547142742Z",
+          "minTime" : "2023-03-05T12:40:27.403499378Z",
           "useIndexLatestReadyTime" : false
         },
         "inline" : true,
@@ -769,7 +769,7 @@
       } ],
       "featureDefinition" : {
         "clazz" : "FeatureDefinition",
-        "dsl" : "'set_once'",
+        "dsl" : "'set'",
         "field" : {
           "name" : "event",
           "nativeType" : {
@@ -780,7 +780,7 @@
         },
         "featureInputs" : [ {
           "clazz" : "LiteralFeatureInput",
-          "literal" : "set_once",
+          "literal" : "set",
           "nativeType" : {
             "name" : "string",
             "isArray" : false,
@@ -1262,17 +1262,16 @@
     }
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-02-22T13:15:00Z",
-  "endExecutionAt" : "2023-02-22T08:00:00Z",
+  "startExecutionFrom" : "2023-03-05T12:45:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "link" : {
-    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_9",
+    "parentId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa_12",
     "rootId" : "b16b8a1d-bb61-400e-add6-0651aed1bcaa",
-    "currentVersion" : 10,
+    "currentVersion" : 13,
     "isCorrection" : false
   },
   "version" : 75,
@@ -1284,16 +1283,15 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-15T14:48:00Z",
-  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Running"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
   "blocks" : [ {
     "id" : "7366b601-2ebd-4ad5-8f23-622d4664c578",
     "title" : "Select Block",
-    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       'set_once' as event,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"0-kinesis_events_classic\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
+    "expression" : "// GENERATED @ 2023-02-21T13:31:35.771975918Z\nSELECT time AS processing_time,\n       'set' as event,\n       data.user_id:string as user_id,\n       uid.\"data.uid\":string AS \"$distinct_id\",\n       uid.utm_source:string AS utm_source,\n       uid.utm_medium:string AS utm_medium,\n       uid.utm_campaign:string AS utm_campaign,\n       uid.utm_content:string AS utm_content,\n       uid.referer_url:string AS referer_url,\n       uid.referer_medium:string AS referer_medium,\n       uid.country_name:string AS country_name,\n       uid.continent_name:string AS continent_name,\n       uid.city_name:string AS city_name,\n       uid.subdivision_name:string AS subdivision_name,\n       data.properties.username:string as username,\n       data.properties.access_code:string as access_code,\n       data.properties.email:string as email\nFROM \"staging.collector-service.client-events\" \nLEFT JOIN LATEST \"uid enrichment\" uid AFTER 3 MINUTES ON uid.data.uid = data.uid \nwhere\ndata.event_name = 'activation_success'",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -1307,7 +1305,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-22T13:58:47.666541321Z",
+  "deployTime" : "2023-03-05T12:40:27.520939581Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -1318,6 +1316,6 @@
   },
   "outputShards" : 1,
   "hasAggregations" : false,
-  "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
-  "versionNumber" : 10
+  "allReferences" : [ "253e62f9-e5fe-4abb-8214-66fc32fabc91", "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
+  "versionNumber" : 13
 }
