@@ -8,11 +8,11 @@
     "description" : "Duplicate of events_pipeline",
     "creationTime" : "2023-03-05T11:48:18.295254127Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-03-05T11:49:17.379030337Z",
+    "modifiedTime" : "2023-03-05T12:30:04.570198994Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "f96ac0d9-b152-4148-acc1-4031df587263"
+    "versionId" : "46964029-cc63-42c8-a035-898322a62231"
   },
   "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -353,10 +353,14 @@
   "outputInterval" : 1,
   "startExecutionFrom" : "2023-03-05T11:49:00Z",
   "allowCartesianProducts" : false,
-  "isDeleted" : false,
+  "isDeleted" : true,
   "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "physicalDelete" : {
+    "initiated" : false,
+    "shouldRun" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -390,7 +394,7 @@
   },
   "deployTime" : "2023-03-05T11:49:17.094395646Z",
   "status" : {
-    "clazz" : "Stopped"
+    "clazz" : "Archived"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
