@@ -5,12 +5,15 @@
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
   "computeEnvironment" : "50814408-017a-4275-934f-5a8f774bb135",
   "displayData" : {
-    "name" : "users-data-2",
+    "name" : "users-data",
     "description" : "",
     "creationTime" : "2023-03-08T12:24:33.950147856Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedBy" : { },
-    "versionId" : "80c5485f-ce90-4768-9491-c73dee733d74"
+    "modifiedTime" : "2023-03-08T12:24:34.427703805Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "059c7579-d0eb-45a6-a1ce-2dc2e8c54a29"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
