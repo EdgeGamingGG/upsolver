@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "e18d5567-b93e-4276-997c-8ce3f1bb3a8d",
+  "id" : "e18d5567-b93e-4276-997c-8ce3f1bb3a8d_2",
   "displayData" : {
     "name" : "snowflake - users pipeline",
     "description" : "Duplicate of users pipeline",
     "creationTime" : "2023-02-21T14:21:59.707589907Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-21T14:22:35.031630126Z",
+    "modifiedTime" : "2023-03-08T10:41:20.374323342Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "a1f0a958-cf3f-4286-b11e-cd9bbf44e0ec"
+    "versionId" : "e9d63e37-673c-42f3-9251-fa2f83e6b5db"
   },
   "inputs" : [ "36733e00-10c6-4bcb-8e18-81b580c88eba" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -638,109 +638,13 @@
     },
     "columns" : [ ],
     "columnTypesInfo" : [ {
-      "name" : "IS_CREATOR",
-      "info" : {
-        "typeName" : "BOOLEAN",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EVENT_ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "AVATAR_URL",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "AUTH_SOURCE_USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "CREATED_AT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "LOCALE",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "STATUS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "USERID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "SESSION_ID",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EMAIL",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "BETA_CODE",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "NICKNAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "BAN",
+      "name" : "PROCESSING_TIME",
       "info" : {
         "typeName" : "DOUBLE",
         "isIdentity" : false
       }
     }, {
-      "name" : "UPDATED_AT",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
       "name" : "ADMIN_PERMISSIONS",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "EVENT_NAME",
-      "info" : {
-        "typeName" : "VARCHAR",
-        "isIdentity" : false
-      }
-    }, {
-      "name" : "STEAMID",
       "info" : {
         "typeName" : "VARCHAR",
         "isIdentity" : false
@@ -752,9 +656,105 @@
         "isIdentity" : false
       }
     }, {
-      "name" : "PROCESSING_TIME",
+      "name" : "AUTH_SOURCE_USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "AVATAR_URL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BAN",
       "info" : {
         "typeName" : "DOUBLE",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "BETA_CODE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "CREATED_AT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EMAIL",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "EVENT_NAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "IS_CREATOR",
+      "info" : {
+        "typeName" : "BOOLEAN",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "LOCALE",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "NICKNAME",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "SESSION_ID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STATUS",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "STEAMID",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "UPDATED_AT",
+      "info" : {
+        "typeName" : "VARCHAR",
+        "isIdentity" : false
+      }
+    }, {
+      "name" : "USERID",
+      "info" : {
+        "typeName" : "VARCHAR",
         "isIdentity" : false
       }
     } ],
@@ -765,12 +765,17 @@
   },
   "outputInterval" : 60,
   "startExecutionFrom" : "2023-02-15T20:45:00Z",
-  "endExecutionAt" : "2023-02-15T20:45:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "link" : {
+    "parentId" : "e18d5567-b93e-4276-997c-8ce3f1bb3a8d",
+    "rootId" : "e18d5567-b93e-4276-997c-8ce3f1bb3a8d",
+    "currentVersion" : 2,
+    "isCorrection" : false
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -802,7 +807,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-02-21T14:22:34.750853008Z",
+  "deployTime" : "2023-03-08T10:41:41.000514114Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -814,5 +819,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "36733e00-10c6-4bcb-8e18-81b580c88eba" ],
-  "versionNumber" : 1
+  "versionNumber" : 2
 }
