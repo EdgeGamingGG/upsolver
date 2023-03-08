@@ -8,11 +8,11 @@
     "description" : "Duplicate of upsolver - session info",
     "creationTime" : "2023-03-08T06:20:21.599662542Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T16:06:01.843033558Z",
+    "modifiedTime" : "2023-03-08T16:08:04.728751123Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "3747828b-796b-4343-a504-bc44610ffca5"
+    "versionId" : "a7e5bd04-a241-4e3d-a886-168b0a9dc034"
   },
   "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -921,7 +921,7 @@
   "earliestStartExecutionFrom" : "2023-02-16T01:14:00Z",
   "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Deleting"
+    "clazz" : "ExecutionState$Completed"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
