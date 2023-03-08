@@ -8,11 +8,11 @@
     "description" : "Duplicate of users pipeline",
     "creationTime" : "2023-02-20T11:20:04.630595972Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T10:31:43.753886527Z",
+    "modifiedTime" : "2023-03-08T10:39:26.322194662Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "7c1d4563-b412-4d6c-8cba-7a25f24fa2c5"
+    "versionId" : "17c53ca3-87c1-4111-adeb-3e6b3d40f2d9"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -119,6 +119,10 @@
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : true
+  },
   "version" : 75,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -152,7 +156,7 @@
   },
   "deployTime" : "2023-02-20T11:20:35.293685453Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Deleting"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",

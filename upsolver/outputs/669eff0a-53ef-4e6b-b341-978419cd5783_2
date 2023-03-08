@@ -8,11 +8,11 @@
     "description" : "Duplicate of upsolver - users pipeline",
     "creationTime" : "2023-03-08T11:32:52.843511161Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T12:25:51.832843986Z",
+    "modifiedTime" : "2023-03-08T12:26:04.461056757Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "721d67b4-4dd5-4b21-afb4-6d03f5246f4c"
+    "versionId" : "85f2bf6c-557f-4a8e-a11e-04b5f536e390"
   },
   "inputs" : [ "a64ce1f2-d253-46e8-b052-4f6c899f74b4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -72,6 +72,10 @@
     "currentVersion" : 2,
     "isCorrection" : false
   },
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : true
+  },
   "version" : 76,
   "allowRenaming" : true,
   "operationParallelism" : {
@@ -105,7 +109,7 @@
   },
   "deployTime" : "2023-03-08T12:26:04.179217547Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Deleting"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
