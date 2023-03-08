@@ -8,11 +8,11 @@
     "description" : "Duplicate of mixpanel - user property update",
     "creationTime" : "2023-02-22T09:19:40.045935337Z",
     "createdBy" : " (stas.grinberg@ludeo.com)",
-    "modifiedTime" : "2023-03-05T12:40:00.577116336Z",
+    "modifiedTime" : "2023-03-05T12:40:27.844863473Z",
     "modifiedBy" : {
       "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "a99f3874-29ff-4967-ace6-841ebc071d80"
+    "versionId" : "f9038921-7fb5-4e09-88ac-28a5f667a76e"
   },
   "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -726,8 +726,7 @@
           "useLatestSnapshot" : true,
           "innerJoin" : false,
           "useMutatedIndex" : false,
-          "minTime" : "2023-03-05T12:40:27.403499378Z",
-          "useIndexLatestReadyTime" : false
+          "minTime" : "2023-03-05T12:40:27.403499378Z"
         },
         "inline" : true,
         "id" : "e8b5f286-86f9-14f2-ea35-2be040a7c447",
@@ -1265,7 +1264,7 @@
   "startExecutionFrom" : "2023-03-05T12:45:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "a8a95a18-bd8c-4615-9718-42eab5fff6b7",
   "link" : {
@@ -1307,7 +1306,7 @@
   },
   "deployTime" : "2023-03-05T12:40:27.520939581Z",
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
