@@ -8,11 +8,11 @@
     "description" : "Duplicate of snowflake - session enrichment",
     "creationTime" : "2023-02-20T11:35:16.305683807Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-20T12:20:53.501880995Z",
+    "modifiedTime" : "2023-02-22T09:55:18.272824678Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "a1723eef-48e4-4f9c-8563-4d1853bd7e69"
+    "versionId" : "8d51157d-3d3e-4d26-ac2e-5d70cac54ccf"
   },
   "inputs" : [ "8e970b18-36d4-4dcf-b439-e5fd5a6b1101" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -1145,7 +1145,7 @@
   "startExecutionFrom" : "2023-02-15T21:56:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
-  "isRunning" : false,
+  "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
@@ -1187,7 +1187,7 @@
   },
   "deployTime" : "2023-02-20T12:20:53.218809699Z",
   "status" : {
-    "clazz" : "Stopped"
+    "clazz" : "Running"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
