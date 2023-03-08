@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-03-01T13:32:40.999922723Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T07:08:20.069729874Z",
+    "modifiedTime" : "2023-03-08T07:08:27.224832827Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "a5004452-214d-40e7-9f25-f6f05e222197"
+    "versionId" : "a48cc6eb-009e-4425-b8bc-0c26d2bbce7f"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -34,11 +34,11 @@
   "kafkaVersion" : "0.10.x.x",
   "readFromStart" : true,
   "useSsl" : false,
-  "isDeleted" : false,
+  "isDeleted" : true,
   "softRetention" : false,
   "physicalDelete" : {
     "initiated" : true,
-    "shouldRun" : true
+    "shouldRun" : false
   },
   "version" : 75,
   "needsElasticIP" : true,
@@ -60,7 +60,7 @@
   "previewId" : "09155940266ef68d1fd5593ca169face",
   "addBatcherTag" : false,
   "additionalTopicNames" : [ ],
-  "isRunning" : true,
+  "isRunning" : false,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "allowPartitionResets" : false,
   "isUnsynchronized" : false,
@@ -71,7 +71,7 @@
     "displayValue" : "Manual - Shards"
   },
   "status" : {
-    "clazz" : "Deleting"
+    "clazz" : "Archived"
   },
   "safeStartTime" : "2023-02-22T12:35:00Z"
 }
