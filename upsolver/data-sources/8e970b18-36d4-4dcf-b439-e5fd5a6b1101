@@ -9,11 +9,11 @@
     "description" : "",
     "creationTime" : "2023-01-15T12:25:31.571563591Z",
     "createdBy" : "David Aisenthal (david@upsolver.com)",
-    "modifiedTime" : "2023-02-16T16:45:31.281344948Z",
+    "modifiedTime" : "2023-03-05T13:00:28.451259437Z",
     "modifiedBy" : {
-      "value" : "David Aisenthal (david@upsolver.com)"
+      "value" : " (stas.grinberg@ludeo.com)"
     },
-    "versionId" : "686811e6-01d3-46a1-bad2-454d74b1f781"
+    "versionId" : "d1488b91-2d70-47d6-afc9-8c7c6719a425"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -49,6 +49,10 @@
   "isOnline" : false,
   "isDeleted" : false,
   "softRetention" : false,
+  "physicalDelete" : {
+    "initiated" : true,
+    "shouldRun" : true
+  },
   "version" : 75,
   "operationParallelism" : {
     "clazz" : "TaskTimeOperationParallelismProvider",
@@ -92,7 +96,7 @@
   },
   "previewId" : "0947fa96df3a0233419d6b35edb6c478",
   "addBatcherTag" : false,
-  "isRunning" : false,
+  "isRunning" : true,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "isUnsynchronized" : false,
   "shards" : 4,
@@ -102,7 +106,7 @@
     "displayValue" : "Manual - 4 Shards"
   },
   "status" : {
-    "clazz" : "Stopped"
+    "clazz" : "Deleting"
   },
   "safeStartTime" : "2023-01-14T12:25:00Z"
 }
