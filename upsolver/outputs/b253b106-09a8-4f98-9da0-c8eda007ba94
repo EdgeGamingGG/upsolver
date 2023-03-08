@@ -8,11 +8,11 @@
     "description" : "Duplicate of snowflake - ludeos pipeline",
     "creationTime" : "2023-02-21T14:18:42.931037846Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-02-21T14:24:07.376552209Z",
+    "modifiedTime" : "2023-02-27T09:55:50.393391378Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "6917503e-bfca-44d1-8fac-96da0f36a813"
+    "versionId" : "51eeed49-43f8-489f-ab88-54f5008d5caf"
   },
   "inputs" : [ "f498f746-9e94-4ebf-b1a9-7a09bb84b77a" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
