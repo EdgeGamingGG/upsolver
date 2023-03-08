@@ -9,8 +9,11 @@
     "description" : "",
     "creationTime" : "2023-03-01T13:32:40.999922723Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedBy" : { },
-    "versionId" : "50266c62-0c51-4a57-b773-0d337ea9bf39"
+    "modifiedTime" : "2023-03-01T13:32:41.514158407Z",
+    "modifiedBy" : {
+      "value" : " (bar.z@ludeo.com)"
+    },
+    "versionId" : "b5a90d81-e356-47e1-b76d-e037effe9244"
   },
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "previousLocations" : {
@@ -53,7 +56,7 @@
   "previewId" : "09155940266ef68d1fd5593ca169face",
   "addBatcherTag" : false,
   "additionalTopicNames" : [ ],
-  "isRunning" : true,
+  "isRunning" : false,
   "deleteMetadataFilesCreatedByBatcher" : false,
   "allowPartitionResets" : false,
   "isUnsynchronized" : false,
@@ -64,7 +67,7 @@
     "displayValue" : "Manual - Shards"
   },
   "status" : {
-    "clazz" : "Running"
+    "clazz" : "Stopped"
   },
   "safeStartTime" : "2023-02-22T12:35:00Z"
 }
