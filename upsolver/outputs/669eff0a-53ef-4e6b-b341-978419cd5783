@@ -8,11 +8,11 @@
     "description" : "Duplicate of upsolver - users pipeline",
     "creationTime" : "2023-03-08T11:32:52.843511161Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T12:26:04.460553635Z",
+    "modifiedTime" : "2023-03-08T12:26:43.965966093Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "4cb4d0b9-c2ae-4de1-8abc-74f91dc5191c"
+    "versionId" : "ad7e0b41-97d0-4eae-9057-dc291bcad772"
   },
   "inputs" : [ "48c01ebd-358d-4d47-8d9b-b8241b85989a" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -115,13 +115,13 @@
   "startExecutionFrom" : "2023-03-06T15:23:00Z",
   "endExecutionAt" : "2023-03-08T12:23:00Z",
   "allowCartesianProducts" : false,
-  "isDeleted" : false,
-  "isRunning" : true,
+  "isDeleted" : true,
+  "isRunning" : false,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "physicalDelete" : {
     "initiated" : true,
-    "shouldRun" : true
+    "shouldRun" : false
   },
   "version" : 76,
   "allowRenaming" : true,
@@ -156,7 +156,7 @@
   },
   "deployTime" : "2023-03-08T11:33:15.401110796Z",
   "status" : {
-    "clazz" : "Deleting"
+    "clazz" : "Archived"
   },
   "shards" : {
     "clazz" : "ManualParallelismType",
