@@ -2,17 +2,17 @@
   "clazz" : "OutputTemplate",
   "useNewEscaping" : false,
   "supportMapSameKeyMultipleTimes" : false,
-  "id" : "4bd76307-aa13-4ce0-b2cf-cdaaefeeb560_4",
+  "id" : "4bd76307-aa13-4ce0-b2cf-cdaaefeeb560_5",
   "displayData" : {
     "name" : "upsolver - session info",
     "description" : "Duplicate of upsolver - session info",
     "creationTime" : "2023-03-08T06:20:21.599662542Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T16:06:01.848687628Z",
+    "modifiedTime" : "2023-03-08T16:07:51.676824496Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "9fa99441-fb84-459c-b4b3-15f2c7830f91"
+    "versionId" : "6eee006c-d4fb-4e0c-bc6c-9eacbbfec4ca"
   },
   "inputs" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -925,6 +925,36 @@
         "isAggregationField" : false,
         "isFromInline" : false
       }
+    }, {
+      "clazz" : "RawOutput",
+      "outputs" : [ {
+        "name" : "uid",
+        "index" : 30,
+        "outputType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "warnings" : [ ]
+      } ],
+      "field" : {
+        "clazz" : "FieldFeatureInput",
+        "nativeType" : {
+          "name" : "string",
+          "isArray" : false,
+          "subFields" : [ ]
+        },
+        "field" : {
+          "name" : "data.uid",
+          "nativeType" : {
+            "name" : "string",
+            "isArray" : false,
+            "subFields" : [ ]
+          }
+        },
+        "isAggregationField" : false,
+        "isFromInline" : false
+      }
     } ],
     "softRetention" : false,
     "addTimeField" : true,
@@ -936,17 +966,16 @@
     "shouldFlatten" : true
   },
   "outputInterval" : 1,
-  "startExecutionFrom" : "2023-03-04T10:05:00Z",
-  "endExecutionAt" : "2023-03-04T10:06:00Z",
+  "startExecutionFrom" : "2023-03-04T10:06:00Z",
   "allowCartesianProducts" : false,
   "isDeleted" : false,
   "isRunning" : true,
   "deployedEver" : true,
   "connectionPointer" : "3e4e7f53-3fdf-449b-99e8-cc7671f9e8d0",
   "link" : {
-    "parentId" : "4bd76307-aa13-4ce0-b2cf-cdaaefeeb560_3",
+    "parentId" : "4bd76307-aa13-4ce0-b2cf-cdaaefeeb560_4",
     "rootId" : "4bd76307-aa13-4ce0-b2cf-cdaaefeeb560",
-    "currentVersion" : 4,
+    "currentVersion" : 5,
     "isCorrection" : false
   },
   "version" : 75,
@@ -966,7 +995,7 @@
   "blocks" : [ {
     "id" : "2292469b-df81-431e-afa4-19322a6d5843",
     "title" : "Select Block",
-    "expression" : "\n// GENERATED @ 2023-03-08T09:35:42.591031570Z\nSELECT data.session_id AS SESSION_ID,\n       data.user_id AS USER_ID,\n       data.application AS APPLICATION,\n       FROM_UNIXTIME(data.created_at_local) AS CREATED_AT_LOCAL,\n       FROM_UNIXTIME(data.inserted_at) AS SERVER_TIME,\n       GEO_IP('Country Name', data.geo.ip) AS COUNTRY_NAME,\n       GEO_IP('Country Iso Code', data.geo.ip) AS COUNTRY_ISO,\n       GEO_IP('Continent Name', data.geo.ip) AS CONTINENT_NAME,\n       GEO_IP('Continent Code', data.geo.ip) AS CONTINENT_ISO,\n       GEO_IP('City Name', data.geo.ip) AS CITY_NAME,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS SUBDIVISION_NAME,\n       data.device.device.type AS DEVICE_TYPE,\n       data.device.device.brand AS DEVICE_BRAND,\n       data.device.device.model AS DEVICE_MODEL,\n       data.device.os.name AS OS_NAME,\n       data.device.os.version AS OS_VERSION,\n       data.device.os.platform AS OS_PLATFORM,\n       data.device.client.type AS CLIENT_TYPE,\n       data.device.client.name AS CLIENT_NAME,\n       data.device.client.version AS CLIENT_VERSION,\n       data.utm.campaign:string AS UTM_CAMPAIGN,\n       data.utm.medium:string AS UTM_MEDIUM,\n       data.utm.content:string AS UTM_CONTENT,\n       data.utm.source:string AS UTM_SOURCE,\n       data.referer.medium:string AS REFERER_MEDIUM,\n       data.referer.url:string AS REFERER_URL,\n       data.referer.url_scheme:string AS REFERER_URL_SCHEME,\n       data.geo.ip:string AS DATA_IP_ADDRESS,\n       data.created_at AS created_at:NUMBER,\n       data.geo.ip AS ip_address:STRING\n  FROM \"staging.collector-service.client-events\"  \n",
+    "expression" : "\n// GENERATED @ 2023-03-08T09:35:42.591031570Z\nSELECT data.session_id AS SESSION_ID,\n       data.user_id AS USER_ID,\n       data.application AS APPLICATION,\n       FROM_UNIXTIME(data.created_at_local) AS CREATED_AT_LOCAL,\n       FROM_UNIXTIME(data.inserted_at) AS SERVER_TIME,\n       GEO_IP('Country Name', data.geo.ip) AS COUNTRY_NAME,\n       GEO_IP('Country Iso Code', data.geo.ip) AS COUNTRY_ISO,\n       GEO_IP('Continent Name', data.geo.ip) AS CONTINENT_NAME,\n       GEO_IP('Continent Code', data.geo.ip) AS CONTINENT_ISO,\n       GEO_IP('City Name', data.geo.ip) AS CITY_NAME,\n       GEO_IP('Subdivision 1 Name', data.geo.ip) AS SUBDIVISION_NAME,\n       data.device.device.type AS DEVICE_TYPE,\n       data.device.device.brand AS DEVICE_BRAND,\n       data.device.device.model AS DEVICE_MODEL,\n       data.device.os.name AS OS_NAME,\n       data.device.os.version AS OS_VERSION,\n       data.device.os.platform AS OS_PLATFORM,\n       data.device.client.type AS CLIENT_TYPE,\n       data.device.client.name AS CLIENT_NAME,\n       data.device.client.version AS CLIENT_VERSION,\n       data.utm.campaign:string AS UTM_CAMPAIGN,\n       data.utm.medium:string AS UTM_MEDIUM,\n       data.utm.content:string AS UTM_CONTENT,\n       data.utm.source:string AS UTM_SOURCE,\n       data.referer.medium:string AS REFERER_MEDIUM,\n       data.referer.url:string AS REFERER_URL,\n       data.referer.url_scheme:string AS REFERER_URL_SCHEME,\n       data.geo.ip:string AS DATA_IP_ADDRESS,\n       data.created_at AS created_at:NUMBER,\n       data.geo.ip AS ip_address:STRING,\n       data.uid AS uid:STRING\n  FROM \"staging.collector-service.client-events\"  \n",
     "dslWarnings" : [ ],
     "isSelectBlock" : true
   } ],
@@ -980,7 +1009,7 @@
     },
     "isUserDefined" : false
   },
-  "deployTime" : "2023-03-08T16:06:01.509958967Z",
+  "deployTime" : "2023-03-08T16:08:04.443082562Z",
   "status" : {
     "clazz" : "Running"
   },
@@ -992,5 +1021,5 @@
   "outputShards" : 1,
   "hasAggregations" : false,
   "allReferences" : [ "e6f05f9d-fe73-482b-b144-06ae3625a3d4" ],
-  "versionNumber" : 4
+  "versionNumber" : 5
 }
