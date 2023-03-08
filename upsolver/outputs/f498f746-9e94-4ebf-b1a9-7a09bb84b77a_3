@@ -8,11 +8,11 @@
     "description" : "Duplicate of ludeos pipeline",
     "creationTime" : "2023-02-20T11:50:41.221581805Z",
     "createdBy" : " (bar.z@ludeo.com)",
-    "modifiedTime" : "2023-03-08T11:28:56.278842977Z",
+    "modifiedTime" : "2023-03-08T11:29:30.687976889Z",
     "modifiedBy" : {
       "value" : " (bar.z@ludeo.com)"
     },
-    "versionId" : "77c84594-a192-4de6-961c-9b5b7a87ed2a"
+    "versionId" : "2a0b8c58-893e-43fd-885b-fb03b4b21a63"
   },
   "inputs" : [ "6ab800ef-74dc-456b-b351-245aa548966f" ],
   "organizationId" : "07b3dbc6-db99-4e4c-8401-dd14e6733c94",
@@ -129,8 +129,9 @@
     "clazz" : "NoOperationParallelism"
   },
   "earliestStartExecutionFrom" : "2023-02-15T21:01:00Z",
+  "isCompleted" : false,
   "executionState" : {
-    "clazz" : "ExecutionState$Running"
+    "clazz" : "ExecutionState$Deleting"
   },
   "workspaces" : [ ],
   "reportingTags" : "",
